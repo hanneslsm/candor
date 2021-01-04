@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+# Alerts
+
+⚠️WIP
+--------------------------------------------------------------*/
+
+.info {
+  padding         : em(12);
+  border          : 1px solid rgba($c__info, 0.4);
+  border-radius   : $radius;
+  background-color: rgba($c__info, 0.1);
+  box-shadow      : 0 1px 1px $c__warsaw;
+  text-align      : center;
+  font-size       : em(14);
+  &::before{
+    content: "💡";
+    padding: 0 em(6);
+  }
+}
+
+.tipp {
+  padding         : em(12);
+  border          : 1px solid $c__tipp;
+  border-radius   : $radius;
+  background-color: rgba($c__tipp, 0.2);
+  box-shadow      : 0 1px 1px $c__warsaw;
+  text-align      : center;
+  font-size       : em(14);
+  &::before{
+    content: "💡";
+    padding: 0 em(6);
+  }
+}
+
+
+.success {
+  padding         : em(12);
+  border          : 1px solid $c__berlin;
+  border-top      : 2px solid $c__success;
+  border-radius   : $radius;
+  background-color: $c__madrid;
+  box-shadow      : 0 1px 1px $c__warsaw;
+  font-size       : em(14);
+}
+
+.error {
+  padding         : em(12);
+  border          : 1px solid $c__berlin;
+  border-top      : 2px solid $c__error;
+  border-radius   : $radius;
+  background-color: $c__madrid;
+  box-shadow      : 0 1px 1px $c__warsaw;
+  font-size       : em(14);
+}
+
+.warning {
+  padding         : em(12);
+  border          : 1px solid $c__berlin;
+  border-top      : 2px solid $c__warning;
+  border-radius   : $radius;
+  background-color: $c__madrid;
+  box-shadow      : 0 1px 1px $c__warsaw;
+  font-size       : em(14);
+}

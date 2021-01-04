@@ -1,0 +1,14 @@
+/*--------------------------------------------------------------
+# px to em
+
+This function converts px sizes to em.
+via https://css-tricks.com/snippets/sass/px-to-em-functions/
+--------------------------------------------------------------*/
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}

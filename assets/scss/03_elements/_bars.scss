@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# Bars
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Progress bar
+--------------------------------------------------------------*/
+progress {
+  overflow     : hidden;
+  height       : em(14);
+  border       : 1px solid $c__berlin;
+  border-radius: $radius;
+}
+
+progress::-webkit-progress-bar {
+  background-color: $c__vienna;
+  box-shadow      : inset 0 1px 1px $c__warsaw;
+}
+
+progress::-webkit-progress-value {
+  background      : linear-gradient(to right, $c__paris, darken($c__paris, 5%));
+  background-color: $c__paris;
+}
+
+/*--------------------------------------------------------------
+## Meter
+--------------------------------------------------------------*/
+meter {
+  /* add you styling here
+   * this might be helpful:
+   * https://css-tricks.com/html5-meter-element/
+  */
+}

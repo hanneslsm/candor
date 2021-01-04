@@ -1,0 +1,14 @@
+/*--------------------------------------------------------------
+# .call
+--------------------------------------------------------------*/
+.call {
+  text-align: center;
+
+  a {
+    display    : block;
+    font-size  : em(32);
+    color      : $c__paris;
+    font-family: $serif;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,11 @@
+/*--------------------------------------------------------------
+# noscroll utility
+
+This is helpful for the navigation. It hides the scrollbar & stops scrolling
+--------------------------------------------------------------*/
+
+.noscroll {
+  overflow: hidden;
+  width   : 100%;
+  height  : 100%;
+}

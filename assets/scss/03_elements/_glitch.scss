@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+# Glitch
+
+(c) Lucas Bebber https://codepen.io/lbebber/details/ypgql
+--------------------------------------------------------------*/
+.glitch {
+  position: relative;
+  color   : $c__rome;
+}
+@keyframes noise-anim {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+
+.glitch:after {
+  position   : absolute;
+  top        : 0;
+  left       : em(2);
+  overflow   : hidden;
+  background : $c__madrid;
+  color      : $c__rome;
+  content    : attr(data-text);
+  text-shadow: -1px 0 $red;
+  animation  : noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+
+.glitch:before {
+  position   : absolute;
+  top        : 0;
+  left       : em(-2);
+  overflow   : hidden;
+  clip       : rect(0,900px,0,0);
+  background : $c__madrid;
+  color      : $c__rome;
+  content    : attr(data-text);
+  text-shadow: 1px 0 $blue;
+  animation  : noise-anim-2 3s infinite linear alternate-reverse;
+}

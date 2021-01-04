@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------
+# Data
+
+inspired by https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data
+--------------------------------------------------------------*/
+data {
+  line-height: em(12);
+}
+
+data:hover::after {
+  content  : ' (' attr(value) ')';
+  font-size: x-small;
+}
+
+/*--------------------------------------------------------------
+# Time
+--------------------------------------------------------------*/
+time {
+  //font-weight: bold;
+}

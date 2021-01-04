@@ -1,0 +1,13 @@
+.site-wrapper {
+  display: flex;
+  margin : 0 auto;
+  width  : nth($site-wrapper, 1);
+  height : auto;
+
+  @include bp(medium) {
+    width: nth($site-wrapper, 2);
+  }
+  @include bp(large) {
+    width: nth($site-wrapper, 3);
+  }
+}

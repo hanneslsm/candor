@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+.entry-header
+--------------------------------------------------------------*/
+.entry-header {
+  padding         : em(24) 0 0;
+  background-color: $c__sofia;
+
+  @include bp(medium) {
+    padding-top: em(24);
+  }
+  @include bp(large) {
+    padding-top: em(24);
+  }
+
+  &::after {
+    display          : flex;
+    height           : 100px;
+    background-color : $c__madrid;
+    background-image : svg-paintstroke('%23fafafa'); //to use hex see https://codepen.io/gunnarbittersmann/pen/BoovjR
+    background-size  : contain;
+    background-repeat: no-repeat;
+    content          : "";
+  }
+
+  h1 {
+    font-size: em(32);
+  }
+}

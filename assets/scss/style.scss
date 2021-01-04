@@ -1,0 +1,92 @@
+/*!
+  Theme Name:     colony
+  Theme URI:      https://github.com/HannesDev/colony
+  Description:    colony is a custom Wordpress theme for the vegetourians blog.
+  Version:        3.0.0
+  Tags:           blog
+  Text Domain:    colony
+
+  Author:         HannesLeismann, HannesDev
+  Author URI:     http://hannesleismann.com
+
+  License:        GNU General Public License v3 or later
+  License URI:    LICENSE
+*/
+@import
+"02_helpers/px2em",
+"01_config/colors.scss",
+"01_config/variables.scss",
+"01_config/svgs.scss",
+
+"02_helpers/breakpoints",
+"02_helpers/clearfix",
+"02_helpers/center-block",
+"02_helpers/noscroll",
+"02_helpers/screen-reader",
+"02_helpers/word-break",
+
+"03_elements/grid",
+"03_elements/body",
+"03_elements/address",
+"03_elements/alerts", // WIP
+"03_elements/bars",
+"03_elements/badges",
+"03_elements/button",
+"03_elements/code",
+"03_elements/data",
+"03_elements/details",
+"03_elements/explanations",
+"03_elements/figure",
+"03_elements/forms",
+"03_elements/glitch", //Add again after developing!
+"03_elements/headlines",
+"03_elements/images",
+"03_elements/labels",
+"03_elements/links",
+"03_elements/lists",
+"03_elements/media",
+"03_elements/quotes",
+"03_elements/recipes",
+"03_elements/rtl",
+"03_elements/ruby",
+"03_elements/separators",
+"03_elements/tables",
+"03_elements/text",
+"03_elements/totop",
+
+"04_sections/site/site",
+"04_sections/site/site-wrapper",
+"04_sections/site/site-content",
+
+"04_sections/header/site-header",
+"04_sections/header/header",
+"04_sections/header/site-branding",
+"04_sections/navigation/primary-navigation",
+"04_sections/header/header-icons",
+
+"04_sections/drawer/site-drawer",
+"04_sections/drawer/drawer-logo",
+"04_sections/navigation/drawer-navigation",
+
+"04_sections/entry/entry-wrapper",
+"04_sections/entry/entry-header",
+"04_sections/entry/entry-thumbnail",
+"04_sections/entry/entry-meta",
+"04_sections/entry/entry-content",
+"04_sections/entry/entry-home",
+
+
+"04_sections/footer/site-footer",
+"04_sections/footer/footer",
+"04_sections/footer/site-info",
+"04_sections/navigation/footer-navigation",
+"04_sections/footer/footer-widgets",
+
+"04_sections/site/error-404",
+"04_sections/site/site-none",
+
+"04_sections/comments/comment-form",
+
+"04_sections/box/cookies.scss",
+"04_sections/box/sharing.scss"
+;

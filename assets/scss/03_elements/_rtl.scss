@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+# Right to Left
+--------------------------------------------------------------*/
+*[dir="ltr"] {
+  unicode-bidi: embed;
+  direction   : ltr;
+}
+
+*[dir="rtl"] {
+  text-align  : right;
+  unicode-bidi: embed;
+  direction   : rtl;
+}
+
+bdo[dir="ltr"] {
+  unicode-bidi: bidi-override;
+  direction   : ltr;
+}
+
+bdo,
+bdo[dir="rtl"] {
+  text-align  : right;
+  unicode-bidi: bidi-override;
+  direction   : rtl;
+}
+
+bdi {
+  }

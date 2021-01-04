@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+# Recipes
+--------------------------------------------------------------*/
+.recipe ul,
+ul.recipe {
+  position     : relative;
+  margin       : em(36) em(0);
+  padding      : em(0);
+  border       : 1px solid $c__berlin;
+  border-radius: $radius;
+  box-shadow   : 0 1px 1px $c__warsaw;
+  list-style   : none;
+  font-size    : em(12);
+  font-family  : $mono;
+
+  li {
+    padding      : em(8) em(48);
+    height       : auto;
+    border-bottom: 1px dotted $c__berlin;
+
+    &:hover {
+      background: $c__sofia;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &:before {
+    position    : absolute;
+    left        : em(24);
+    z-index     : 1;
+    height      : 100%;
+    border-right: 3px double $red;
+    content     : "";
+  }
+}

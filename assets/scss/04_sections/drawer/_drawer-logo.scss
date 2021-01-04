@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+### drawer logo
+--------------------------------------------------------------*/
+.drawer-logo {
+  padding   : em(6) em(48);
+  text-align: center;
+
+  & .custom-logo {
+    /* custom logo resets */
+    position  : static;
+    max-height: 8em;
+    text-align: center;
+    transform : none;
+  }
+}

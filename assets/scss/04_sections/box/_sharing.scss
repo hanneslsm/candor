@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+# .sharing-box
+--------------------------------------------------------------*/
+.sharing-box {
+  margin          : em(48);
+  padding         : em(24);
+  border          : 1px solid rgba(0, 150, 255, 0.3);
+  border-radius   : $radius;
+  background-color: $c__madrid;
+  box-shadow      : $shadow;
+  text-align      : center;
+  font-size       : small;
+  background-color: rgba(0, 150, 255, 0.05);
+
+
+  h5 {
+    margin: em(12) em(12) em(24);
+  }
+
+  a {
+    text-decoration: none;
+    background: none;
+
+    &:hover{
+      background: none;
+      background-color: $c__madrid;
+    }
+  }
+  .share-button{
+    line-height: em(42);
+    background-color: $c__madrid;
+  }
+}
+
+
+@include bp(large) {
+  .share-whatsapp {
+    display: none;
+  }
+}

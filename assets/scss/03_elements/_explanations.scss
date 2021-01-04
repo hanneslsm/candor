@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+# Explanations
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Abbreviation
+Note: acronym is deprecated and should not be used
+--------------------------------------------------------------*/
+abbr[title],
+acronym {
+  border-bottom  : 1px dotted $c__prague;
+  text-decoration: none;
+  cursor         : help;
+}
+
+/*--------------------------------------------------------------
+##  Defining instance
+--------------------------------------------------------------*/
+dfn {
+  border-bottom  : 1px dotted $c__prague;
+  text-decoration: none;
+}

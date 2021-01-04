@@ -1,0 +1,120 @@
+/*--------------------------------------------------------------
+# Grid
+
+colonys built in flex 12 grid system
+inspired by https://css-tricks.com/responsive-designs-and-css-custom-properties-building-a-flexible-grid-system/
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Config
+--------------------------------------------------------------*/
+$grid__columns: 12; // Number of columns in the grid system
+$grid__width: 100%; // in percentage
+$grid__width--large: 100%;
+
+.row {
+  display: flex;
+}
+
+[class*="grid"],
+[class^="grid"] {
+  flex  : auto;
+  margin: 0 auto;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.grid {width: $grid__width;}
+.grid1 {width: $grid__width / (12 / 1);}
+.grid2 {width: $grid__width / (12 / 2);}
+.grid3 {width: $grid__width / (12 / 3);}
+.grid4 {width: $grid__width / (12 / 4);}
+.grid5 {width: $grid__width / (12 / 5);}
+.grid6 {width: $grid__width / (12 / 6);}
+.grid7 {width: $grid__width / (12 / 7);}
+.grid8 {width: $grid__width / (12 / 8);}
+.grid9 {width: $grid__width / (12 / 9);}
+.grid10 {width: $grid__width / (12 / 10);}
+.grid11 {width: $grid__width / (12 / 11);}
+.grid12 {width: $grid__width;}
+/*--------------------------------------------------------------
+## Small
+--------------------------------------------------------------*/
+@include bp(small) {
+  .row {
+    flex-direction: column;
+  }
+
+  .grid {
+    width: $grid__width;
+  }
+
+  [class*="grid"],
+  [class^="grid"] {
+    flex  : auto;
+    width: 100%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+## Medium
+--------------------------------------------------------------
+@include bp(medium) {
+  .row {
+    flex-direction: row;
+  }
+  [class*="grid"],
+  [class^="grid"] {
+    flex  : auto;
+    //width: auto;
+    margin: 0 em(6);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+## Large
+--------------------------------------------------------------
+@include bp(large) {
+  .row {
+    flex-direction: row;
+  }
+
+  [class*="grid"],
+  [class^="grid"] {
+    flex  : auto;
+    margin: 0 em(6);
+    //width: auto;
+
+    &:last-child {
+      margin-right: em(6);
+    }
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Reset margins
+--------------------------------------------------------------
+.margin0{
+  [class*="grid"],
+  [class^="grid"] {
+    flex  : auto;
+    margin: 0 0;
+
+    &:last-child {
+      margin-right: em(0);
+    }
+  }
+}
+
+*/

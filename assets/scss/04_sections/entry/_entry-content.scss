@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+.entry-content
+--------------------------------------------------------------*/
+.entry-content {
+  display       : flex;
+  flex-direction: column;
+  padding       : em(12);
+  // width is controlled by .site-wrapper and .entry-wrapper
+
+  @include bp(medium) {
+    margin : em(24) auto;
+    padding: 0;
+  }
+
+  a {
+    color      : $c__rome;
+    background : linear-gradient(to top, transparent 5%,$c__amsterdam 5%, $c__amsterdam 35%, transparent 0%);
+    font-weight: normal;
+
+    &:visited {}
+
+    &:active,
+    &:focus,
+    &:hover {
+      //color: $c__budapest;
+      background     : linear-gradient(to top, transparent 5%, darken($c__amsterdam,10%) 5%, darken($c__amsterdam, 10%) 35%, transparent 0%);
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+.entry-thumbnail
+--------------------------------------------------------------*/
+.entry-thumbnail {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  flex-basis     : 50%;
+
+  @include bp(medium) {
+    margin-right: em(12);
+  }
+  a {
+    display    : flex;
+    align-items: center;
+    padding    : 0;
+    width      : 50%;
+
+    @include bp(medium) {
+      width: auto;
+    }
+  }
+
+  img {
+    border-radius: $radius;
+    box-shadow   : $shadow;
+  }
+
+}

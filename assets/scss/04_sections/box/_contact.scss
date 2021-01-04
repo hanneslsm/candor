@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+# .contact
+--------------------------------------------------------------*/
+.contact {
+  display       : flex;
+  align-items   : center;
+  flex-direction: column;
+  padding       : em(24);
+  border-radius : $radius;
+
+}
+
+.contact-12 {
+  display    : flex;
+  align-items: flex-start;
+  max-width  : 380px;
+}

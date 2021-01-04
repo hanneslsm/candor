@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------
+# Breakpoints
+
+candor uses the mobile first approach. Everything is optimized for the smartphone
+by default, unless otherwise specified by breakpoints.
+
+Use the mixin in you scss files:
+@include bp(medium) { color: red;}
+--------------------------------------------------------------*/
+
+@mixin bp($point) {
+  // This is the default. Breakpoint specifically for small devices (like smartphones).
+  @if $point == small {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  // Breakpoint for everything that is is larger than the small (like tablets).
+@else
+
+  if $point == medium {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  // Breakpoint for everything that is is larger than the medium (like desktops).
+@else
+
+  if $point == large {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}

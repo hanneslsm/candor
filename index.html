@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <title>Candor - a simple css framework</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="site">
+      <header class="site-header">
+        <div class="site-branding">
+					<a href="#" rel="home">candor</a>
+				</div> <!-- header__branding -->
+
+        <!-- .header-navigation
+      ************************************************************** -->
+          <!-- ⚠️ WIP -->
+
+        <!-- drawer__icon
+        ************************************************************** -->
+        <div class="header-icons">
+          <span class="icon-hamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </span>
+          <span class="icon-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </div>
+      </header> <!-- .header -->
+
+
+      <!-- .drawer
+  		************************************************************** -->
+        <!-- ⚠️ WIP -->
+
+
+
+      <main class="site-content">
+        <header class="entry-header">
+          <div class="site-wrapper">
+            <h1>Title</h1>
+          </div> <!-- .site-wrapper -->
+        </header><!-- .entry-header -->
+
+
+      <!-- .entry-content
+      ************************************************************** -->
+      <div class="entry-content site-wrapper">
+        <div class="entry-wrapper">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+
+
+          <h2>Address</h2>
+          <address>
+          1600 Pennsylvania Ave NW,
+          Washington,
+          DC 20500,
+          Vereinigte Staaten
+          </address>
+          <h2>Badge</h2>
+          Die Erde ist der dichteste, fünftgrößte<span class="badge">5</span> und der Sonne drittnächste<span class="badge">3</span> Planet des Sonnensystems.<span class="badge">3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608</span>
+          <h2>Progress bar</h2>
+          <progress value="70" max="100">70 %</progress>
+          <h2>Buttons</h2>
+          <h3>regular</h3>
+          This is a <span class="button">Button</span> with a class.
+          This is a <input type="submit"> Button in an input.
+          <h3>disabled</h3>
+          This is a disabled <button type="button" disabled="">Button</button>
+          <h2>Code</h2>
+          <h3>Pre</h3>
+          <pre>The World is the planet Earth and all life on it, including human civilization. In a philosophical context, the "world" is the whole of the physical Universe, or an ontological world (the "world" of an individual). In a theological context, the world is the material or the profane sphere, as opposed to the celestial, spiritual, transcendent or sacred spheres. "End of the world" scenarios refer to the end of human history, often in religious contexts.</pre>
+          <pre>/*--------------------------------------------------------------
+          ## Preformatted Text
+          --------------------------------------------------------------*/
+          pre {
+            overflow     : auto;
+            margin-bottom: em(24);
+            padding      : em(12) em(24);
+            border-radius: $radius;
+            background   : $c__vienna;
+            box-shadow   : 0 1px 1px $c__warsaw;
+            font-size    : em(14);
+            font-family  : $f__mono;
+            max-height: 80vh;
+          }
+
+          /*--------------------------------------------------------------
+          ## Code, Variables
+          Note: tt is deprecated and should not be used
+          --------------------------------------------------------------*/
+          code,
+          tt,
+          var {
+            padding      : em(3) em(6);
+            border-radius: $radius;
+            background   : $c__vienna;
+            color        : $c__rome;
+            font-size    : em(14);
+            font-family  : $f__mono;
+          }
+
+          /*--------------------------------------------------------------
+          ## Keyboard
+          --------------------------------------------------------------*/
+          kbd {
+            padding      : em(3) em(6);
+            border       : 1px solid $c__berlin;
+            border-radius: em(3);
+            background   : $white;
+            box-shadow   : 0 1px 0 $c__warsaw, 0 0 0 1px $white inset;
+            text-shadow  : 0 1px 0 $c__warsaw;
+            font-size    : em(14);
+            font-family  : $f__mono;
+          }
+
+          /*--------------------------------------------------------------
+          ## Sample output
+          --------------------------------------------------------------*/
+          samp {
+            padding         : em(3) em(6);
+            border-radius   : em(3);
+            background-color: #333;
+            color           : #4AF626;
+            font-size       : em(14);
+            font-family     : $f__mono;
+            line-height     : em(12);
+          }
+          </pre>
+          <h3>Code</h3>
+          The <code>history of the World</code> is commonly understood as the history of humanity spanning the major geopolitical developments of about five millennia, from the first <kbd>civilizations</kbd> to the present. In terms such as world religion, world language, world government, and world war, the term <samp>world</samp> suggests an international or intercontinental scope without necessarily implying participation of every part of the world.
+          <h2>Data</h2>
+          <ul>
+           	<li><data value="21,542,000">Beijing</data></li>
+           	<li><data value="13,929,286">Tokyo</data></li>
+           	<li><data value="12,506,468">Moscow</data></li>
+          </ul>
+          <h2>Details</h2>
+          <details>
+          <summary>Shape</summary> The shape of Earth is nearly spherical. There is a small flattening at the poles and bulging around the equator due to Earth's rotation. To second order, Earth is approximately an oblate spheroid, whose equatorial diameter is 43 kilometres (27 mi) larger than the pole-to-pole diameter, although the variation is less than 1% of the average radius of the Earth.
+          </details>
+          <h2>Abbreviation</h2>
+          <dfn>Earth</dfn>'s mass is approximately 5970 <abbr title="yottagram">Yg</abbr>.
+          <h2>Figure</h2>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1438955138287-0c090d2290d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="Paris" style="width:500px"><figcaption>Fig.1 - The Eiffel Tower in Paris was built as an entrance arch for the 1889 world's fair.</figcaption></figure>
+          <h2>Forms</h2>
+          nero has a big variety of forms. See the the separate forms section.
+          <h2>Glitch</h2>
+          There must be an <span class="glitch" data-text="error">error</span>.
+          <h2>Headlines</h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in convallis justo. Morbi at gravida massa. Proin sagittis dapibus placerat. Aenean elementum sed ante tempor tincidunt. Mauris maximus lobortis diam, egestas elementum nisl egestas ac.
+          <h1>Headline 1</h1>
+          Praesent non dolor lorem. Nullam mollis vestibulum aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque maximus iaculis dolor.
+          <h3>Headline 3</h3>
+          Vivamus quis odio ipsum. Morbi fermentum consectetur dictum. Ut suscipit lectus vitae mi gravida, at ornare eros bibendum. Proin ipsum tellus, bibendum non enim in, interdum consectetur nibh. Cras et felis eu augue malesuada fringilla. Suspendisse in lacus lobortis, malesuada odio eget, semper turpis.
+          <h4>Headline 4</h4>
+          Ut euismod, enim quis vestibulum egestas, leo nisi ullamcorper turpis, eu semper sapien odio vel eros. Proin condimentum a purus ac egestas.
+          <h5>Headline 5</h5>
+          Mauris elementum odio in aliquet sollicitudin. Phasellus eros ipsum, aliquet eget sapien at, venenatis semper turpis. Morbi fermentum consectetur dictum. Ut suscipit lectus vitae mi gravida, at ornare eros bibendum. Proin ipsum tellus, bibendum non enim in, interdum consectetur nibh. Cras et felis eu augue malesuada fringilla. Suspendisse in lacus lobortis, malesuada odio eget, semper turpis. Ut euismod, enim quis vestibulum egestas, leo nisi ullamcorper turpis, eu semper sapien odio vel eros. Proin condimentum a purus ac egestas.
+          <h2>Label</h2>
+          Duis volutpat tellus vitae nibh tempor vestibulum. Morbi vehicula enim sed pulvinar elementum. Etiam porta et nunc non commodo. Ut pharetra, risus at venenatis varius, ante lectus feugiat dolor, quis aliquet diam erat sed magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean in auctor dolor.<span class="label">new!</span>
+          <h6>Headline 6</h6>
+          Nulla suscipit sagittis purus sit amet tempor. Morbi laoreet est sed mi viverra cursus. Fusce pulvinar vehicula laoreet. Nam id magna ac nibh suscipit cursus.
+          <h2>Lists</h2>
+          <h3>Unordered list</h3>
+          <ul>
+           	<li>Paris</li>
+           	<li>Madrid</li>
+           	<li>Berlin</li>
+           	<li>Warsaw</li>
+          </ul>
+          <h3>Ordered list</h3>
+          <ol>
+           	<li>Istanbul</li>
+           	<li>Moscow</li>
+           	<li>London</li>
+           	<li>Saint Petersburg</li>
+          </ol>
+          <h3>Definition list</h3>
+          <dl>
+           	<dt>Amsterdam</dt>
+           	<dd>Netherlands</dd>
+           	<dt>Antwerp</dt>
+           	<dd>Belgium</dd>
+           	<dt>Athens</dt>
+           	<dd>Greece</dd>
+          </dl>
+          <h2>Quotes</h2>
+          <cite>If the Earth gets hit by an asteroid, it's game over. It's control-alt-delete for civilization.</cite> – Bill Nye
+          <blockquote cite="https://www.brainyquote.com/search_results?q=travel">
+          Reminds me of my safari in Africa. Somebody forgot the corkscrew and for several days we had to live on nothing but food and water.
+
+          – W. C. Fields</blockquote>
+          <h2>Recipe</h2>
+          <ul class="recipe">
+           	<li>1 package 2-layer-size cake mix (any flavor)</li>
+           	<li>1 recipe Creamy White Frosting or two 16-ounce cans creamy white frosting</li>
+           	<li>Green and blue paste food colorings</li>
+           	<li>Powdered sugar</li>
+          </ul>
+          Step 1
+          Preheat oven to 325°F. Grease and lightly flour two 4- to 4 1/2-cup ovenproof glass or stainless-steel bowls; set aside. Prepare batter for cake mix according to package directions. Divide batter between the prepared bowls. (If you don't have two identical bowls, fill one bowl with half of the batter; bake and repeat.) Bake for 40 to 50 minutes or until a wooden toothpick inserted in the centers comes out clean. Cool cakes in bowls on wire racks for 10 minutes. Remove cakes from bowls; cool completely on wire racks. Trim flat sides of cakes to make even surfaces.
+          <h2>Right to left support</h2>
+          <p dir="rtl">
+          الأرض (رمزها الرمز الفلكي للأرض) هي ثالث كواكب المجموعة الشمسية بعدًا عن الشمس بعد عطارد والزهرة، وتعتبر من أكبر الكواكب الأرضية في النظام الشمسي، وذلك من حيث قطرها وكتلتها وكثافتها، ويطلق على هذا الكوكب أيضًا اسم العالم واليابس.</p>
+          تعتبر الأرض مسكنًا لملايين الأنواع  من الكائنات الحية، بما فيها الإنسان؛ وهي المكان الوحيد المعروف بوجود حياة عليه في الكون. تكونت الأرض منذ حوالي 4.54 مليار سنة، وقد ظهرت الحياة على سطحها في المليار سنة الأخيرة. ومنذ ذلك الحين أدى الغلاف الحيوي للأرض إلى تغير الغلاف الجوي والظروف غير الحيوية الموجودة على الكوكب، مما سمح بتكاثر الكائنات التي تعيش فقط في ظل وجود الأكسجين وتكوّن طبقة الأوزون، التي تعمل مع المجال المغناطيسي للأرض على حجب الإشعاعات الضارة، مما يسمح بوجود الحياة على سطح الأرض. تحجب طبقة الأوزون الأشعة فوق البنفسجية، ويعمل المجال المغناطيسي للأرض على إزاحة وإبعاد الجسيمات الأولية المشحونة القادمة من الشمس بسرعات عظيمة ويبعدها في الفضاء الخارجي بعيدا عن الأرض، فلا تتسبب
+          في الإضرار بالكائنات الحية.
+
+          Earth <bdi>الأرض</bdi> is the third planet from the Sun and the only astronomical object known to harbor life.
+          <h2>Separator</h2>
+
+          <hr>
+
+          <h2>Tables</h2>
+          <table>
+          <tbody>
+          <tr>
+          <th>City</th>
+          <th>Country</th>
+          <th>Population</th>
+          </tr>
+          <tr>
+          <td>Chongqing</td>
+          <td>China</td>
+          <td>30,752,000</td>
+          </tr>
+          <tr>
+          <td>Shanghai</td>
+          <td>China</td>
+          <td>24,183,000</td>
+          </tr>
+          <tr>
+          <td>Bejing</td>
+          <td>China</td>
+          <td>21,707,000</td>
+          </tr>
+          <tr>
+          <td>Delhi</td>
+          <td>India</td>
+          <td>16,753,235</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>table narrow</h3>
+          <table class="table-narrow">
+          <tbody>
+          <tr>
+          <th>City</th>
+          <th>Country</th>
+          <th>Population</th>
+          </tr>
+          <tr>
+          <td>Chongqing</td>
+          <td>China</td>
+          <td>30,752,000</td>
+          </tr>
+          <tr>
+          <td>Shanghai</td>
+          <td>China</td>
+          <td>24,183,000</td>
+          </tr>
+          <tr>
+          <td>Bejing</td>
+          <td>China</td>
+          <td>21,707,000</td>
+          </tr>
+          <tr>
+          <td>Delhi</td>
+          <td>India</td>
+          <td>16,753,235</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>tables striped</h3>
+          <table class="table-striped">
+          <tbody>
+          <tr>
+          <th>City</th>
+          <th>Country</th>
+          <th>Population</th>
+          </tr>
+          <tr>
+          <td>Chongqing</td>
+          <td>China</td>
+          <td>30,752,000</td>
+          </tr>
+          <tr>
+          <td>Shanghai</td>
+          <td>China</td>
+          <td>24,183,000</td>
+          </tr>
+          <tr>
+          <td>Bejing</td>
+          <td>China</td>
+          <td>21,707,000</td>
+          </tr>
+          <tr>
+          <td>Delhi</td>
+          <td>India</td>
+          <td>16,753,235</td>
+          </tr>
+          </tbody>
+          </table>
+        </div> <!-- .entry-wrapper -->
+      </div> <!-- .entry-content -->
+
+
+
+      </main> <!-- .site-content -->
+
+
+    </div> <!-- .site -->
+  </body>
+</html>

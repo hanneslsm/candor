@@ -1,0 +1,104 @@
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Responsive Table container
+
+inspired by http://maxdesign.com.au/articles/simple-responsive-table/
+--------------------------------------------------------------*/
+.table-container {
+  overflow-y: auto;
+  width     : 100%;
+}
+
+/*--------------------------------------------------------------
+## Table Content
+--------------------------------------------------------------*/
+table {
+  overflow       : scroll;
+  margin         : em(12) 0;
+  border-collapse: collapse;
+  border-style   : hidden;
+  box-shadow     : 0 1px 1px $c__warsaw;
+  table-layout   : fixed;
+}
+table, th, td {
+  border: 1px solid $c__berlin;
+}
+
+td,
+th,
+tr {
+  margin : 0;
+  padding: em(6) em(12);
+  border: 1px dotted $c__berlin;
+}
+
+/*--------------------------------------------------------------
+## Table header
+--------------------------------------------------------------*/
+th {
+  background   : $c__vienna;
+  text-align   : left;
+  font-weight  : bold;
+}
+
+thead {}
+
+/*--------------------------------------------------------------
+## Table body
+--------------------------------------------------------------*/
+tbody {}
+
+/*--------------------------------------------------------------
+## Table footer
+--------------------------------------------------------------*/
+tfoot {
+  background-color: $c__sofia;
+  color           : $c__budapest;
+}
+
+/*--------------------------------------------------------------
+## Table striped
+--------------------------------------------------------------*/
+.table-striped {
+  tr:nth-child(odd) {
+    background-color: $c__sofia;
+  }
+}
+
+/*--------------------------------------------------------------
+## Table narrow
+--------------------------------------------------------------*/
+.table-narrow {
+  td,
+  th,
+  tr {
+    padding    : em(4) em(8);
+    font-size  : em(14);
+    line-height: em(16);
+  }
+}
+
+
+/*--------------------------------------------------------------
+## Table primary
+--------------------------------------------------------------*/
+.table-primary{
+  table, th, td {
+    border: none;
+  }
+
+  td,
+  th,
+  tr {
+    margin : 0;
+    padding: em(6) em(12);
+    border: none;
+    border-bottom: 1px solid $c__vienna;
+  }
+
+  tr:hover td {
+    border-bottom: 1px solid $c__amsterdam; }
+}

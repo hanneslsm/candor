@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.button,
+a.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  margin          : em(6) 0;
+  padding         : em(6) em(12);
+  min-width       : em(48);
+  border          : $border;
+  border-radius   : $radius;
+  background-color: $c__madrid;
+  box-shadow      : $shadow;
+  color           : $c__rome;
+  text-align      : center;
+  text-decoration : none;
+  text-transform  : none;
+  white-space     : nowrap;
+  cursor          : pointer;
+
+  &:hover {
+    border          : 1px solid $c__rome;
+    background-color: $c__sofia;
+    box-shadow      : $shadow2;
+    color           : $c__rome;
+    text-decoration: none;
+  }
+
+  &:active {
+    border    : 1px solid $c__paris;
+    box-shadow: $shadow2;
+    color     : $c__paris;
+  }
+}
+
+button:disabled,
+button[disabled],
+input[type="button"]:disabled,
+input[type="reset"]:disabled,
+input[type="submit"]:disabled {
+  color : $c__berlin;
+  cursor: not-allowed;
+
+  &:hover {
+    border    : $border;
+    box-shadow: $shadow;
+    color     : $c__berlin;
+  }
+
+}

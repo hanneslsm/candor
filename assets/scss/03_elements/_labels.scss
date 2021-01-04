@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# Labels
+--------------------------------------------------------------*/
+.label {
+  display       : inline-block;
+  margin        : em(0) em(3);
+  padding       : em(3) em(6) em(2);
+  border-radius : $radius;
+  vertical-align: baseline;
+  text-align    : center;
+  white-space   : nowrap;
+  font-size     : em(12);
+  line-height   : em(16);
+
+  & {
+    border          : 1px solid $c__berlin;
+    background-color: $c__sofia;
+    color           : $c__rome;
+    text-decoration : none;
+  }
+
+  & a {
+    border: none;
+    cursor: pointer;
+  }
+}

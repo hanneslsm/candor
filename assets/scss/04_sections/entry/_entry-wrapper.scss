@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+.entry-wrapper
+--------------------------------------------------------------*/
+/*
+.entry-wrapper > *:not([class*="wp-block"]) {
+  margin-right: auto;
+  margin-left : auto;
+  width       : nth($entry-wrapper, 1);
+
+  @include bp(medium) {
+    width: nth($entry-wrapper, 2);
+  }
+  @include bp(large) {
+    width: nth($entry-wrapper, 3);
+  }
+}
+*/

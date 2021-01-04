@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+# Root, Globals, HTML, Body
+--------------------------------------------------------------*/
+
+* {
+  box-sizing       : border-box;
+  background-repeat: no-repeat;
+  // box-shadow       : 1px 1px 0 0 limegreen, -1px -1px 0 0 lawngreen; //dev tool
+}
+
+html {}
+
+body {
+  color                 : $c__rome;
+  font-size             : $font-size;
+  font-family           : $sans;
+  font-display          : swap; //see https://web.dev/avoid-invisible-text/
+  line-height           : $line-height;
+  background-color      : $c__madrid;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {}
