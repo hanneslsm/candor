@@ -1,8 +1,8 @@
 /*--------------------------------------------------------------
 .entry-wrapper
 --------------------------------------------------------------*/
-/*
-.entry-wrapper > *:not([class*="wp-block"]) {
+
+.entry-wrapper {
   margin-right: auto;
   margin-left : auto;
   width       : nth($entry-wrapper, 1);
@@ -14,4 +14,3 @@
     width: nth($entry-wrapper, 3);
   }
 }
-*/

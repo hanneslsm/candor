@@ -1,4 +1,9 @@
+/*--------------------------------------------------------------
+# .site-content
+--------------------------------------------------------------*/
+
 .site-content {
-  flex      : 1;  /* sticks footer to the bottom */
-  margin-top: $header-top;
+  flex            : 1;  /* sticks footer to the bottom */
+  margin-top      : $header-top;
+  background-color: $site-background;
 }

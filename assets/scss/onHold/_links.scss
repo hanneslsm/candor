@@ -2,18 +2,18 @@
 # Links
 --------------------------------------------------------------*/
 a {
-  color          : $link;
+  color          : $c__rome;
   text-decoration: none;
 
   &:visited {
-    color: $link-visted;
+    color: $c__brussels;
   }
 
   &:active,
   &:focus,
   &:hover {
-    color                : $link-hover;
+    color                : $c__brussels;
     text-decoration      : underline;
-    text-decoration-color: $link-hover;
+    text-decoration-color: $c__amsterdam;
   }
 }

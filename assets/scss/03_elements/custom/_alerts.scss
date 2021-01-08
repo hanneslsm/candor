@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+# Alerts
+--------------------------------------------------------------*/
+
+.info {
+  padding         : em(12) em(24);
+  border-bottom   : 1px solid $ui-border;
+  border-left     : 2px solid $ui-info;
+  border-radius   : $radius;
+  background-color: $ui-01;
+  font-style      : italic;
+  font-size       : em(14);
+
+  &::before {
+    display    : block;
+    content    : attr(data-text);
+    font-style : italic;
+    font-family: $serif;
+  }
+}
+
+.tipp {
+  @extend .info;
+
+  border-left: 2px solid $ui-tipp;
+}
+
+.success {
+  @extend .info;
+
+  border-left: 2px solid $ui-success;
+}
+
+.error {
+  @extend .info;
+
+  border-left: 2px solid $ui-error;
+}
+
+.warning {
+  @extend .info;
+
+  border-left: 2px solid $ui-warning;
+}

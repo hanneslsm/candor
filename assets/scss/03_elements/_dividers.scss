@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+# Dividers
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## hr lines
+-------------------------------------------------------------- */
+
+hr {
+  overflow     : visible; // normalize
+  box-sizing   : content-box; // normalize
+  width        : 100%;
+  height       : 0; // normalize
+  border-top   : 3px double $ui-border;
+  border-right : 0;
+  border-bottom: 0;
+  border-left  : 0;
+}

@@ -1,0 +1,10 @@
+/*--------------------------------------------------------------
+# Font variables
+--------------------------------------------------------------*/
+$sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$mono: "Andale Mono", Courier, monospace;
+$icon: "Fontawesome", "ZapfDingbats";
+$serif: 'DM Serif Display', "Georgia", "Times", Georgia, Times, serif;
+
+$line-height: em(24);
+$font-size: em(16); // px not accessible in some browsers, use em!

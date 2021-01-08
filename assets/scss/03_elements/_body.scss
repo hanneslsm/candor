@@ -5,19 +5,29 @@
 * {
   box-sizing       : border-box;
   background-repeat: no-repeat;
-  // box-shadow       : 1px 1px 0 0 limegreen, -1px -1px 0 0 lawngreen; //dev tool
 }
 
-html {}
+html {
+  line-height             : 1.15;  /* normalize */
+
+  -webkit-text-size-adjust: 100%;  /* normalize */
+}
 
 body {
+  margin                : 0;
+  background-color      : $c__madrid;
+  background-color      : $body-background;
   color                 : $c__rome;
   font-size             : $font-size;
   font-family           : $sans;
-  font-display          : swap; //see https://web.dev/avoid-invisible-text/
   line-height           : $line-height;
-  background-color      : $c__madrid;
+
+  font-display          : swap; //see https://web.dev/avoid-invisible-text/
   -webkit-font-smoothing: antialiased;
 }
 
 p {}
+
+main {
+  display: block; /* normalize */
+}

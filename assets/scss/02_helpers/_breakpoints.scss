@@ -1,8 +1,8 @@
 /*--------------------------------------------------------------
 # Breakpoints
 
-candor uses the mobile first approach. Everything is optimized for the smartphone
-by default, unless otherwise specified by breakpoints.
+candor uses the mobile first approach.
+Everything is optimized for the smartphone by default, unless otherwise specified with breakpoints.
 
 Use the mixin in you scss files:
 @include bp(medium) { color: red;}

@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+# Tags
+--------------------------------------------------------------*/
+.tag, .tags {
+  display          : inline-block;
+  margin           : 0;
+  padding          : em(6) em(12);
+  border-radius    : $radius;
+  background-color : $ui-01;
+  color            : $text-05;
+  font-size        : em(12);
+  line-height      : 1em;
+
+  margin-inline-end: em(6);
+}
+a.tag{
+  &:hover{
+    color: $text-04;
+    text-decoration: none;
+  }
+}

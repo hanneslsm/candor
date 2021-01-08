@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Grid
 
-colonys built in flex 12 grid system
+candors built in flex 12 grid system
 inspired by https://css-tricks.com/responsive-designs-and-css-custom-properties-building-a-flexible-grid-system/
 --------------------------------------------------------------*/
 
@@ -10,7 +10,7 @@ inspired by https://css-tricks.com/responsive-designs-and-css-custom-properties-
 --------------------------------------------------------------*/
 $grid__columns: 12; // Number of columns in the grid system
 $grid__width: 100%; // in percentage
-$grid__width--large: 100%;
+//$grid__width--large: 100%;
 
 .row {
   display: flex;

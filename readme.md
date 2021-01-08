@@ -43,6 +43,9 @@ I'm glad you want to use candor. It's easy to get it running, just follow the st
   *  **`gulp default` or simply `gulp` runs the `js`, `sass` the `watch` task**
 
 
+
+
+
 ## structure
 ```
 Project Root
@@ -86,6 +89,8 @@ candor uses color tokes.
 🚧 WIP
 
 
+## JQuery
+🚧 WIP
 ***
 # Helpers
 ## breakpoints

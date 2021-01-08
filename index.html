@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <title>Candor - a simple css framework</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="assets/js/script.js"></script>
 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
   </head>
   <body>
@@ -18,311 +26,122 @@
         <div class="site-branding">
 					<a href="#" rel="home">candor</a>
 				</div> <!-- header__branding -->
-
-        <!-- .header-navigation
-      ************************************************************** -->
-          <!-- ⚠️ WIP -->
-
-        <!-- drawer__icon
-        ************************************************************** -->
-        <div class="header-icons">
-          <span class="icon-hamburger">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-          </span>
-          <span class="icon-close">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </span>
-        </div>
       </header> <!-- .header -->
 
 
-      <!-- .drawer
-  		************************************************************** -->
-        <!-- ⚠️ WIP -->
+      <main class="site-content site-wrapper">
+          <div class="entry-wrapper entry-content">
+            <section>
+              <h1>The perfect start for your new project.</h1>
+              <h2>candor is a CSS design system which shines especially by its simplicity.</h2>
+              <p>Candor is the ideal head start to your web project. It has nearly all exisiting HTML elements included, structured and styled in a way so it can easily changed. The mobile first approach gives you the possibile to design easily for smartphones, tables and desktop. </p>
+              <p>The gulp workflow automation tool brings gives you an even more efficient developement enviroment, so you can built cool stuff even faster! </p>
+              <p>All components are easy to find in the strucutred scss, that automatically compile to a minified style.css. Also, javascript files are automatically concated and minified. jQuery runs still on 73% of all websites on the web and will also on yours with candor if you don’t remove it. This gives you super powers when you like to design a Wordpress theme, because candor is already built with Wordpress theme development in mind.</p>
+              <p>Finally, accessibility is a main aspect of the design and development of candor, so everyone can enjoy your websites.</p>
+            </section>
+            <hr>
+            <section>
+              <h1>Getting started</h1>
+              <h2>Installation / First time setup</h2>
+              <p>It’s great that you want to use candor. Let’s get right into it, just follow the steps:
+                  <ol>
+                    <li>Download & install a local server, for example <a href="https://www.mamp.info/de/downloads">https://www.mamp.info/de/downloads</a></li>
+                    <li>Download & install Node.js <a href="https://nodejs.org/en/">https://nodejs.org/en/</a> </li>
+                    <li>If you're on a Apple machine download & install XCode <a href="https://developer.apple.com/xcode/">https://developer.apple.com/xcode/</a> </li>
+                    <li>Download & install Gulp <code>npm install gulp -g</code> </li>
+                    <li>Navigate in the terminal to your project folder</li>
+                    <li>Download & install node modules with <code>npm install</code> </li>
+                    <li>Configure the gulpfile.js (url in line 14)</li>
+                  </ol>
+              </p>
+              <h2>Gulp automation</h2>
+              <p>Gulp is a <q cite="https://gulpjs.com/">toolkit to automate & enhance your workflow</q>. Repetitive tasks can be automated, so you can hyper focus on the development. Luckily candor has a gulpfile already included, so you do not even have to set up the environment.</p>
+              <dl class="">
+                <dt>Stylesheet</dt>
+                <dd>The gulp automation tool prefixes the stylesheet for all modern browsers, compiles your scss files to style.css, minifies the style.css to style.min.css, adds a sourcemap.</dd>
 
+                <dt>Javascript</dt>
+                <dd>The gulp automation tool has plumper included, so you easily see if the code has errors. It concacts all files in “assets/js/src”, compress and minifies them to script.js</dd>
 
+                <dt>Images</dt>
+                <dd>All images in from “assets/img/src” will be minified and optimized for web saved to “assets/img”. The source files will not be touched</dd>
 
-      <main class="site-content">
-        <header class="entry-header">
-          <div class="site-wrapper">
-            <h1>Title</h1>
-          </div> <!-- .site-wrapper -->
-        </header><!-- .entry-header -->
+                <dt>Browser Sync</dt>
+                <dd>Browser Sync is a great tool to test your website on multiple devices simoustanly. <a href="https://browsersync.io/">More info.</a></dd>
 
+                <dt>Release task</dt>
+                <dd>Ready to release your website? The release task automatically compress the files and packs than into a zip in the “_release” folder.</dd>
+              </dl>
+              <p>To run the gulp tasks, navigate in the terminal to your project folder and run the default gulp task with the <code>gulp</code> command while your server is up. <br />You might configure the gulpfile for your environment.</p>
+              <h3>All gulp tasks</h3>
+              <pre>
+gulp img-min      // minifies images from ./assets/img_raw to ./assets/img
+gulp sass         // compiles files from ./assets/scss/*.scss to style.css
+                      * autoprefixer included
+                      * sourcemaps included
+gulp css-min      // minifies style.css to style.min.css
+gulp js           // concats all files from ./assets/js/src to ./assets/js/script.js
+gulp release      // packages the theme to a zip file in the _release folder. Takes the version number from package.json
 
-      <!-- .entry-content
-      ************************************************************** -->
-      <div class="entry-content site-wrapper">
-        <div class="entry-wrapper">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+gulp watch        // has an eye on the scss and js files
+gulp min          // same as default but additionally with css-min and img-min included
+gulp              // is the default task, starts browser sync, runs the js, sass the watch task</pre>
+            <h2>File strcuture</h2>
+            <pre>
+Project Root
+└── assets
+    ├── css               // External styles from third parties
+    ├── fonts             // Webfonts
+    ├── img               // A place for all the images that are required and were minified
+      └── src             // candor has a build-in img minifier. Put your original images in this folder. See gulp tasks
+    ├── js                // All the javascript files that are needed
+      ├── src             // candor has a build-in js minifier. Put your original javascript files in this folder. See gulp tasks
+      └── script.js       // the minfied and concated file of all javascript files in the src folder
+    └── scss
+        ├── 01_config     // scss files in the folder contain mostly variables
+        ├── 02_helpers    // helpers are mixins or classes that can be used in many cases and support in the development
+        ├── 03_elements   // All the css classes that are not specific to the theme layout
+        ├── 04_sections   // This folder is for all the classes that bring the your webpage to life
+        └── style.scss    // Putting it all together</pre>
+            </section>
 
+            <hr>
+            <section>
+              <h1>Helpers</h1>
+              <h2>breakpoints</h2>
+              <span class="tag">assets/scss/02_helpers/breakpoint.css</span>
+              <span class="tag">since v.1.0</span>
+              <a href="#" class="tag">Test</a>
+              <p>candor uses the mobile first approach. Everything is optimized for the smartphone by default, unless otherwise specified by breakpoints.</p>
+              <div class="row">
+                <div class="grid6">
+                  Three breakpoints can used with the “bp” mixin
+                  <ol>
+                    <li><b>default</b>, for devices (e.g. smartphones) smaller than 768px. The breakpoint should only be used if the style should only been display on small devices but not the others.</li>
+                    <li><b>medium</b>, for devices (e.g. tables) between 768px and 1024px</li>
+                    <li><b>large</b>, for devices (e.g. desktop PCs) larger than 1024px</li>
+                  </ol>
+                </div>
+                <div class="grid5">
+                  <pre>
+/* Only for small devices */
+@include bp(small){ YOUR CSS; }
 
+/* For medium devices */
+@include bp(medium) { YOUR CSS;}
 
+/* For large devices */
+@include bp(large) { YOUR CSS;}</pre>
+                </div>
+              </div> <!-- row -->
 
-
-          <h2>Address</h2>
-          <address>
-          1600 Pennsylvania Ave NW,
-          Washington,
-          DC 20500,
-          Vereinigte Staaten
-          </address>
-          <h2>Badge</h2>
-          Die Erde ist der dichteste, fünftgrößte<span class="badge">5</span> und der Sonne drittnächste<span class="badge">3</span> Planet des Sonnensystems.<span class="badge">3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608</span>
-          <h2>Progress bar</h2>
-          <progress value="70" max="100">70 %</progress>
-          <h2>Buttons</h2>
-          <h3>regular</h3>
-          This is a <span class="button">Button</span> with a class.
-          This is a <input type="submit"> Button in an input.
-          <h3>disabled</h3>
-          This is a disabled <button type="button" disabled="">Button</button>
-          <h2>Code</h2>
-          <h3>Pre</h3>
-          <pre>The World is the planet Earth and all life on it, including human civilization. In a philosophical context, the "world" is the whole of the physical Universe, or an ontological world (the "world" of an individual). In a theological context, the world is the material or the profane sphere, as opposed to the celestial, spiritual, transcendent or sacred spheres. "End of the world" scenarios refer to the end of human history, often in religious contexts.</pre>
-          <pre>/*--------------------------------------------------------------
-          ## Preformatted Text
-          --------------------------------------------------------------*/
-          pre {
-            overflow     : auto;
-            margin-bottom: em(24);
-            padding      : em(12) em(24);
-            border-radius: $radius;
-            background   : $c__vienna;
-            box-shadow   : 0 1px 1px $c__warsaw;
-            font-size    : em(14);
-            font-family  : $f__mono;
-            max-height: 80vh;
-          }
-
-          /*--------------------------------------------------------------
-          ## Code, Variables
-          Note: tt is deprecated and should not be used
-          --------------------------------------------------------------*/
-          code,
-          tt,
-          var {
-            padding      : em(3) em(6);
-            border-radius: $radius;
-            background   : $c__vienna;
-            color        : $c__rome;
-            font-size    : em(14);
-            font-family  : $f__mono;
-          }
-
-          /*--------------------------------------------------------------
-          ## Keyboard
-          --------------------------------------------------------------*/
-          kbd {
-            padding      : em(3) em(6);
-            border       : 1px solid $c__berlin;
-            border-radius: em(3);
-            background   : $white;
-            box-shadow   : 0 1px 0 $c__warsaw, 0 0 0 1px $white inset;
-            text-shadow  : 0 1px 0 $c__warsaw;
-            font-size    : em(14);
-            font-family  : $f__mono;
-          }
-
-          /*--------------------------------------------------------------
-          ## Sample output
-          --------------------------------------------------------------*/
-          samp {
-            padding         : em(3) em(6);
-            border-radius   : em(3);
-            background-color: #333;
-            color           : #4AF626;
-            font-size       : em(14);
-            font-family     : $f__mono;
-            line-height     : em(12);
-          }
-          </pre>
-          <h3>Code</h3>
-          The <code>history of the World</code> is commonly understood as the history of humanity spanning the major geopolitical developments of about five millennia, from the first <kbd>civilizations</kbd> to the present. In terms such as world religion, world language, world government, and world war, the term <samp>world</samp> suggests an international or intercontinental scope without necessarily implying participation of every part of the world.
-          <h2>Data</h2>
-          <ul>
-           	<li><data value="21,542,000">Beijing</data></li>
-           	<li><data value="13,929,286">Tokyo</data></li>
-           	<li><data value="12,506,468">Moscow</data></li>
-          </ul>
-          <h2>Details</h2>
-          <details>
-          <summary>Shape</summary> The shape of Earth is nearly spherical. There is a small flattening at the poles and bulging around the equator due to Earth's rotation. To second order, Earth is approximately an oblate spheroid, whose equatorial diameter is 43 kilometres (27 mi) larger than the pole-to-pole diameter, although the variation is less than 1% of the average radius of the Earth.
-          </details>
-          <h2>Abbreviation</h2>
-          <dfn>Earth</dfn>'s mass is approximately 5970 <abbr title="yottagram">Yg</abbr>.
-          <h2>Figure</h2>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1438955138287-0c090d2290d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="Paris" style="width:500px"><figcaption>Fig.1 - The Eiffel Tower in Paris was built as an entrance arch for the 1889 world's fair.</figcaption></figure>
-          <h2>Forms</h2>
-          nero has a big variety of forms. See the the separate forms section.
-          <h2>Glitch</h2>
-          There must be an <span class="glitch" data-text="error">error</span>.
-          <h2>Headlines</h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in convallis justo. Morbi at gravida massa. Proin sagittis dapibus placerat. Aenean elementum sed ante tempor tincidunt. Mauris maximus lobortis diam, egestas elementum nisl egestas ac.
-          <h1>Headline 1</h1>
-          Praesent non dolor lorem. Nullam mollis vestibulum aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque maximus iaculis dolor.
-          <h3>Headline 3</h3>
-          Vivamus quis odio ipsum. Morbi fermentum consectetur dictum. Ut suscipit lectus vitae mi gravida, at ornare eros bibendum. Proin ipsum tellus, bibendum non enim in, interdum consectetur nibh. Cras et felis eu augue malesuada fringilla. Suspendisse in lacus lobortis, malesuada odio eget, semper turpis.
-          <h4>Headline 4</h4>
-          Ut euismod, enim quis vestibulum egestas, leo nisi ullamcorper turpis, eu semper sapien odio vel eros. Proin condimentum a purus ac egestas.
-          <h5>Headline 5</h5>
-          Mauris elementum odio in aliquet sollicitudin. Phasellus eros ipsum, aliquet eget sapien at, venenatis semper turpis. Morbi fermentum consectetur dictum. Ut suscipit lectus vitae mi gravida, at ornare eros bibendum. Proin ipsum tellus, bibendum non enim in, interdum consectetur nibh. Cras et felis eu augue malesuada fringilla. Suspendisse in lacus lobortis, malesuada odio eget, semper turpis. Ut euismod, enim quis vestibulum egestas, leo nisi ullamcorper turpis, eu semper sapien odio vel eros. Proin condimentum a purus ac egestas.
-          <h2>Label</h2>
-          Duis volutpat tellus vitae nibh tempor vestibulum. Morbi vehicula enim sed pulvinar elementum. Etiam porta et nunc non commodo. Ut pharetra, risus at venenatis varius, ante lectus feugiat dolor, quis aliquet diam erat sed magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean in auctor dolor.<span class="label">new!</span>
-          <h6>Headline 6</h6>
-          Nulla suscipit sagittis purus sit amet tempor. Morbi laoreet est sed mi viverra cursus. Fusce pulvinar vehicula laoreet. Nam id magna ac nibh suscipit cursus.
-          <h2>Lists</h2>
-          <h3>Unordered list</h3>
-          <ul>
-           	<li>Paris</li>
-           	<li>Madrid</li>
-           	<li>Berlin</li>
-           	<li>Warsaw</li>
-          </ul>
-          <h3>Ordered list</h3>
-          <ol>
-           	<li>Istanbul</li>
-           	<li>Moscow</li>
-           	<li>London</li>
-           	<li>Saint Petersburg</li>
-          </ol>
-          <h3>Definition list</h3>
-          <dl>
-           	<dt>Amsterdam</dt>
-           	<dd>Netherlands</dd>
-           	<dt>Antwerp</dt>
-           	<dd>Belgium</dd>
-           	<dt>Athens</dt>
-           	<dd>Greece</dd>
-          </dl>
-          <h2>Quotes</h2>
-          <cite>If the Earth gets hit by an asteroid, it's game over. It's control-alt-delete for civilization.</cite> – Bill Nye
-          <blockquote cite="https://www.brainyquote.com/search_results?q=travel">
-          Reminds me of my safari in Africa. Somebody forgot the corkscrew and for several days we had to live on nothing but food and water.
-
-          – W. C. Fields</blockquote>
-          <h2>Recipe</h2>
-          <ul class="recipe">
-           	<li>1 package 2-layer-size cake mix (any flavor)</li>
-           	<li>1 recipe Creamy White Frosting or two 16-ounce cans creamy white frosting</li>
-           	<li>Green and blue paste food colorings</li>
-           	<li>Powdered sugar</li>
-          </ul>
-          Step 1
-          Preheat oven to 325°F. Grease and lightly flour two 4- to 4 1/2-cup ovenproof glass or stainless-steel bowls; set aside. Prepare batter for cake mix according to package directions. Divide batter between the prepared bowls. (If you don't have two identical bowls, fill one bowl with half of the batter; bake and repeat.) Bake for 40 to 50 minutes or until a wooden toothpick inserted in the centers comes out clean. Cool cakes in bowls on wire racks for 10 minutes. Remove cakes from bowls; cool completely on wire racks. Trim flat sides of cakes to make even surfaces.
-          <h2>Right to left support</h2>
-          <p dir="rtl">
-          الأرض (رمزها الرمز الفلكي للأرض) هي ثالث كواكب المجموعة الشمسية بعدًا عن الشمس بعد عطارد والزهرة، وتعتبر من أكبر الكواكب الأرضية في النظام الشمسي، وذلك من حيث قطرها وكتلتها وكثافتها، ويطلق على هذا الكوكب أيضًا اسم العالم واليابس.</p>
-          تعتبر الأرض مسكنًا لملايين الأنواع  من الكائنات الحية، بما فيها الإنسان؛ وهي المكان الوحيد المعروف بوجود حياة عليه في الكون. تكونت الأرض منذ حوالي 4.54 مليار سنة، وقد ظهرت الحياة على سطحها في المليار سنة الأخيرة. ومنذ ذلك الحين أدى الغلاف الحيوي للأرض إلى تغير الغلاف الجوي والظروف غير الحيوية الموجودة على الكوكب، مما سمح بتكاثر الكائنات التي تعيش فقط في ظل وجود الأكسجين وتكوّن طبقة الأوزون، التي تعمل مع المجال المغناطيسي للأرض على حجب الإشعاعات الضارة، مما يسمح بوجود الحياة على سطح الأرض. تحجب طبقة الأوزون الأشعة فوق البنفسجية، ويعمل المجال المغناطيسي للأرض على إزاحة وإبعاد الجسيمات الأولية المشحونة القادمة من الشمس بسرعات عظيمة ويبعدها في الفضاء الخارجي بعيدا عن الأرض، فلا تتسبب
-          في الإضرار بالكائنات الحية.
-
-          Earth <bdi>الأرض</bdi> is the third planet from the Sun and the only astronomical object known to harbor life.
-          <h2>Separator</h2>
-
-          <hr>
-
-          <h2>Tables</h2>
-          <table>
-          <tbody>
-          <tr>
-          <th>City</th>
-          <th>Country</th>
-          <th>Population</th>
-          </tr>
-          <tr>
-          <td>Chongqing</td>
-          <td>China</td>
-          <td>30,752,000</td>
-          </tr>
-          <tr>
-          <td>Shanghai</td>
-          <td>China</td>
-          <td>24,183,000</td>
-          </tr>
-          <tr>
-          <td>Bejing</td>
-          <td>China</td>
-          <td>21,707,000</td>
-          </tr>
-          <tr>
-          <td>Delhi</td>
-          <td>India</td>
-          <td>16,753,235</td>
-          </tr>
-          </tbody>
-          </table>
-          <h3>table narrow</h3>
-          <table class="table-narrow">
-          <tbody>
-          <tr>
-          <th>City</th>
-          <th>Country</th>
-          <th>Population</th>
-          </tr>
-          <tr>
-          <td>Chongqing</td>
-          <td>China</td>
-          <td>30,752,000</td>
-          </tr>
-          <tr>
-          <td>Shanghai</td>
-          <td>China</td>
-          <td>24,183,000</td>
-          </tr>
-          <tr>
-          <td>Bejing</td>
-          <td>China</td>
-          <td>21,707,000</td>
-          </tr>
-          <tr>
-          <td>Delhi</td>
-          <td>India</td>
-          <td>16,753,235</td>
-          </tr>
-          </tbody>
-          </table>
-          <h3>tables striped</h3>
-          <table class="table-striped">
-          <tbody>
-          <tr>
-          <th>City</th>
-          <th>Country</th>
-          <th>Population</th>
-          </tr>
-          <tr>
-          <td>Chongqing</td>
-          <td>China</td>
-          <td>30,752,000</td>
-          </tr>
-          <tr>
-          <td>Shanghai</td>
-          <td>China</td>
-          <td>24,183,000</td>
-          </tr>
-          <tr>
-          <td>Bejing</td>
-          <td>China</td>
-          <td>21,707,000</td>
-          </tr>
-          <tr>
-          <td>Delhi</td>
-          <td>India</td>
-          <td>16,753,235</td>
-          </tr>
-          </tbody>
-          </table>
-        </div> <!-- .entry-wrapper -->
-      </div> <!-- .entry-content -->
-
-
+              <div class="info" data-text="👉 Info" >
+                In the .site-footer.scss is a little dev tool that adds a top border to the footer and adds a visualiation to the breakpoint. Simply uncomment the code. Don’t forget to comment it in again when releasing your design. pink for small display devices, powderblue for medium, palegreen for large.
+              </div>
+            </section>
+          </div> <!-- .entry-content -->
 
       </main> <!-- .site-content -->
-
-
     </div> <!-- .site -->
   </body>
 </html>
