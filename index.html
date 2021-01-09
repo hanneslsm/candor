@@ -15,9 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
-    <!-- Javascript -->
+    <!-- Javascript
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>-->
 
   </head>
   <body>
@@ -111,7 +111,6 @@ Project Root
               <h2>breakpoints</h2>
               <span class="tag">assets/scss/02_helpers/breakpoint.css</span>
               <span class="tag">since v.1.0</span>
-              <a href="#" class="tag">Test</a>
               <p>candor uses the mobile first approach. Everything is optimized for the smartphone by default, unless otherwise specified by breakpoints.</p>
               <div class="row">
                 <div class="grid6">
@@ -138,6 +137,134 @@ Project Root
               <div class="info" data-text="👉 Info" >
                 In the .site-footer.scss is a little dev tool that adds a top border to the footer and adds a visualiation to the breakpoint. Simply uncomment the code. Don’t forget to comment it in again when releasing your design. pink for small display devices, powderblue for medium, palegreen for large.
               </div>
+
+              <h2>pixel 2 em</h2>
+              <span class="tag">assets/scss/02_helpers/pixel2em.css</span>
+              <span class="tag">since v.1.0</span>
+              <p>Using em in CSS has its adventages but it also sometimes makes it difficult to keep consitency. For all who want to program with pixels, but don't want to miss the advantages of ems, this mixin is optimal. It automatically renders pixel to ems. It can also be used for rem. 16 is default.</p>
+              <p>Read more: <a href="https://css-tricks.com/snippets/sass/px-to-em-functions/">https://css-tricks.com/snippets/sass/px-to-em-functions/</a> </p>
+              <div class="row">
+                <div class="grid6">
+                  <pre>/* Usage: */
+margin: em(32);
+
+/* Output: */
+margin: 2em;</pre>
+                </div>
+                <div class="grid6">
+<pre>  /* Usage: */
+  margin: rem(32);
+
+  /* Output depending on base font-size. Usually with 16px:*/
+  margin: 2em;</pre>
+</div>
+              </div><!-- .row -->
+
+
+              <h2>flex grid system</h2>
+              <span class="tag">assets/scss/02_helpers/grid.css</span>
+              <span class="tag">since v.1.0</span>
+              <p>Candor has a 12 grid system included and it’s super easy to use. Just wrap the content in a .row class and than use the grid divs to define the layout.</p>
+              <p>Use the .margin0 helper class to remove space between the grid divs.</p>
+              <div class="grid-example">
+
+                <div class="row">
+                  <div class="grid">
+                    <p>.grid to auto adjust</p>
+                  </div>
+                  <div class="grid">
+                    <p>.grid to auto adjust</p>
+                  </div>
+                </div><!-- .row -->
+
+                <div class="row">
+                  <div class="grid12">
+                    <p>.grid12</p>
+                  </div>
+
+                </div><!-- .row -->
+
+                <div class="row">
+                  <div class="grid11">
+                    <p>.grid11</p>
+                  </div>
+                  <div class="grid1">
+                    <p>.grid1</p>
+                  </div>
+                </div><!-- .row -->
+
+                <div class="row">
+                  <div class="grid10">
+                    <p>.grid10</p>
+                  </div>
+                  <div class="grid2">
+                    <p>.grid2</p>
+                  </div>
+                </div><!-- .row -->
+
+                <div class="row">
+                  <div class="grid9">
+                    <p>.grid9</p>
+                  </div>
+                  <div class="grid3">
+                    <p>.grid3</p>
+                  </div>
+                </div><!-- .row -->
+
+                <div class="row">
+                  <div class="grid8">
+                    <p>.grid8</p>
+                  </div>
+                  <div class="grid4">
+                    <p>.grid4</p>
+                  </div>
+                </div><!-- .row -->
+
+                <div class="row">
+                  <div class="grid7">
+                    <p>.grid7</p>
+                  </div>
+                  <div class="grid5">
+                    <p>.grid5</p>
+                  </div>
+                </div><!-- .row -->
+
+
+                <div class="row">
+                  <div class="grid6">
+                    <p>.grid6</p>
+                  </div>
+                  <div class="grid6">
+                    <p>.grid6</p>
+                  </div>
+                </div><!-- .row -->
+
+                <div class="row margin0">
+                  <div class="grid ">
+                    <p>.grid</p>
+                  </div>
+                  <div class="grid">
+                    <p>.grid</p>
+                  </div>
+                  <div class="grid">
+                    <p>.grid</p>
+                  </div>
+                </div><!-- .row -->
+              </div><!-- .grid-example -->
+
+
+
+              <pre>
+/* Grid example */
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;grid&quot;&gt;
+    &lt;p&gt;.grid to auto adjust&lt;/p&gt;
+  &lt;/div&gt; &lt;!-- .grid --&gt;
+  &lt;div class=&quot;grid&quot;&gt;
+    &lt;p&gt;.grid to auto adjust&lt;/p&gt;
+  &lt;/div&gt; &lt;!-- .grid --&gt;
+&lt;/div&gt;&lt;!-- .row --&gt;</pre>
             </section>
           </div> <!-- .entry-content -->
 
