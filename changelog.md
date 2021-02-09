@@ -3,6 +3,14 @@
 # The perfect start for your new project.
 ### A simple CSS framework with gulp automation
 
+### 0.4 – February 9, 2021
+- add site-footer
+- add address
+- add progress
+- add quotes
+- add screen-reader
+- add content to index.html
+
 ### 0.3 – February 9, 2021
 - add center mixin
 - add "custom" scss folder

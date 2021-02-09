@@ -3,6 +3,30 @@
 
 Supports you in your development
 --------------------------------------------------------------*/
-* {
-  // box-shadow       : 1px 1px 0 0 limegreen, -1px -1px 0 0 lawngreen;
+
+.dev-divs {
+  box-shadow       : 1px 1px 0 0 limegreen, -1px -1px 0 0 lawngreen;
+}
+
+.dev-breakpoint{
+  /* dev tool to visualize the break points */
+  border-top: 2px solid lightpink;
+  @include bp(medium){
+    border-top: 2px solid powderblue;
+  }
+  @include bp(large){
+    border-top: 2px solid palegreen;
+  }
+}
+
+/*--------------------------------------------------------------
+Remove comments to activate
+--------------------------------------------------------------*/
+
+*{
+  // @extend .dev-divs;
+}
+
+.site-footer{
+  // @extend .dev-breakpoint;
 }
