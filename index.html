@@ -167,7 +167,6 @@ margin: 2em;</pre>
               <p>Candor has a 12 grid system included and it’s super easy to use. Just wrap the content in a .row class and than use the grid divs to define the layout.</p>
               <p>Use the .margin0 helper class to remove space between the grid divs.</p>
               <div class="grid-example">
-
                 <div class="row">
                   <div class="grid">
                     <p>.grid to auto adjust</p>
@@ -265,9 +264,29 @@ margin: 2em;</pre>
     &lt;p&gt;.grid to auto adjust&lt;/p&gt;
   &lt;/div&gt; &lt;!-- .grid --&gt;
 &lt;/div&gt;&lt;!-- .row --&gt;</pre>
+
+            <h2>helper classes & mixins</h2>
+            <h3>center-block</h3>
+            <span class="tag">assets/scss/02_helpers/center-block.css</span>
+            <span class="tag">since v.1.0</span>
+            <p>Use this mixin to center an absolute positioned element vertically and/or horizontally</p>
+
+            <div class="center-example">
+              <div class="center-example-child">
+              </div>
+            </div>
+
+<pre>
+/* center-block example */
+
+&lt;div class=&quot;center-example&quot;&gt;
+/* parent must be relative positioned */
+  &lt;div class=&quot;center-example-child&quot;&gt;
+    /* child must be absolute positioned */
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
             </section>
           </div> <!-- .entry-content -->
-
       </main> <!-- .site-content -->
     </div> <!-- .site -->
   </body>

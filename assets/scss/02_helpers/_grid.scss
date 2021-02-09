@@ -84,17 +84,3 @@ $grid__width: 100%; // in percentage
     }
   }
 }
-
-
-
-.grid-example{
-  text-align: center;
-  font-family: $mono;
-  margin: 0;
-  [class*="grid"],
-  [class^="grid"]{
-    border: 1px solid $ui-border;
-    background-color: $ui-02;
-    margin-top: em(6);
-  }
-}

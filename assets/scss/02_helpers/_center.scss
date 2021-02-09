@@ -11,12 +11,15 @@ Use this mixin to center a block vertically.
 	margin-left : auto;
 }
 
+.center-block{
+	@include center-block();
+}
 
 /*--------------------------------------------------------------
 # center div
 *
-* // via https://codepen.io/painteractive/pen/qqroYw
-* // center vertically and/or horizontally an absolute positioned element
+* via https://codepen.io/painteractive/pen/qqroYw
+* center vertically and/or horizontally an absolute positioned element
 --------------------------------------------------------------*/
 
 @mixin center($xy:xy) {
@@ -37,4 +40,8 @@ Use this mixin to center a block vertically.
     bottom   : auto;
     transform: translateY(-50%);
   }
+}
+
+.center{
+	@include center();
 }
