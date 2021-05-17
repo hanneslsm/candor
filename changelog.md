@@ -3,6 +3,18 @@
 # The perfect start for your new project.
 ### A simple CSS framework with gulp automation
 
+### 0.5.1 – May 17, 2021
+- update package.json
+
+### 0.5 - April 3, 2021 & May 17, 2021
+- add buttons
+- add code
+- add details
+- add Explanations
+- add forms
+- add images
+- change readme.me
+
 ### 0.4 – February 9, 2021
 - add site-footer
 - add address
