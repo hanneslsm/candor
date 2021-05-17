@@ -10,6 +10,12 @@ blockquote {
   padding    : em(12) em(24);
   border-left: 3px double $ui-border;
   font-style : italic;
+  p:first-of-type{
+    margin-top: 0;
+  }
+  p:last-of-type{
+    margin-bottom: 0;
+  }
 }
 
 /*--------------------------------------------------------------

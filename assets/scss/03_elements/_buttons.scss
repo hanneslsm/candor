@@ -12,27 +12,28 @@ input[type="submit"] {
   min-width       : em(48);
   border          : $border;
   border-radius   : $radius;
-  background-color: $c__madrid;
+  background-color: $ui-01;
   box-shadow      : $shadow;
-  color           : $c__rome;
+  color           : $text-01;
   text-align      : center;
   text-decoration : none;
   text-transform  : none;
   white-space     : nowrap;
+  font-size       : em(14);
   cursor          : pointer;
 
   &:hover {
-    border          : 1px solid $c__rome;
-    background-color: $c__sofia;
+    border          : 1px solid $ui-05;
+    background-color: $ui-02;
     box-shadow      : $shadow2;
-    color           : $c__rome;
-    text-decoration: none;
+    color           : $text-01;
+    text-decoration : none;
   }
 
   &:active {
-    border    : 1px solid $c__paris;
+    border    : 1px solid $brand-01;
     box-shadow: $shadow2;
-    color     : $c__paris;
+    color     : $brand-01;
   }
 }
 
@@ -41,13 +42,13 @@ button[disabled],
 input[type="button"]:disabled,
 input[type="reset"]:disabled,
 input[type="submit"]:disabled {
-  color : $c__berlin;
+  color : $ui-05;
   cursor: not-allowed;
 
   &:hover {
     border    : $border;
     box-shadow: $shadow;
-    color     : $c__berlin;
+    color     : $ui-border;
   }
 
 }

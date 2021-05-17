@@ -9,7 +9,7 @@ pre {
   overflow     : auto;
   padding      : em(12) em(24);
   max-height   : 80vh;
-  border-bottom: 1px solid $ui-border;
+  border-bottom: $border;
   border-radius: $radius;
   background   : $ui-02;
   font-size    : em(14);
@@ -24,7 +24,7 @@ code,
 tt,
 var {
   padding      : em(3) em(6);
-  border-bottom: 1px solid $ui-border;
+  border-bottom: $border;
   border-radius: $radius;
   background   : $ui-02;
   color        : $text-01;

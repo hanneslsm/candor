@@ -8,7 +8,7 @@
 progress {
   overflow     : hidden;
   height       : em(12);
-  border       : 1px solid $ui-border;
+  border       : $border;
   border-radius: $radius;
   vertical-align: baseline; /* normalize */
 }

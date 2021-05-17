@@ -2,13 +2,13 @@
 # Details
 --------------------------------------------------------------*/
 details {
-  display         : block;
+  display         : block; /* normalize */
   padding         : em(8) em(10);
   border          : $border;
   border-radius   : $radius;
-  background-color: $c__madrid;
+  background-color: $ui-01;
   box-shadow      : $shadow;
-  color           : $c__rome;
+  color           : $text-01;
 
   &:hover {
     box-shadow: $shadow2;

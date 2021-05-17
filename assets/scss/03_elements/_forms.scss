@@ -14,7 +14,7 @@ label {
 --------------------------------------------------------------*/
 fieldset {
   margin       : em(12) 0;
-  border       : 1px solid $c__berlin;
+  border       : $border;
   border-radius: $radius;
 }
 
@@ -31,13 +31,13 @@ input,
 textarea {
   padding    : 0 em(6);
   max-width  : 100%;
-  border     : 1px solid $c__berlin;
-  box-shadow : inset 0 1px 1px $c__bucharest;
+  border     : $border;
+  box-shadow : inset $shadow-03;
   font-family: $sans;
 
   &:hover {
     border    : 1px solid $blue;
-    box-shadow: inset 0 1px 1px $c__warsaw;
+    box-shadow: inset $shadow;
   }
 
   &:focus {
@@ -64,11 +64,11 @@ textarea {
   display      : block;
   padding      : em(6);
   border-radius: $radius;
-  color        : $c__budapest;
+  color        : $ui-06;
   font-size    : rem(16);
 
   &:focus {
-    color: $c__rome;
+    color: $text-01;
   }
 }
 
@@ -95,15 +95,15 @@ input[type=color],
 input[type=image] {
   padding      : 0;
   outline      : 0;
-  border       : 1px solid $c__berlin;
+  border       : $border;
   border-radius: em(3);
-  box-shadow   : inset 0 1px 1px $c__bucharest;
+  box-shadow   : inset $shadow-03;
 
   appearance   : none;
 
   &:hover {
-    border    : 1px solid $c__prague;
-    box-shadow: inset 0 1px 1px $c__warsaw;
+    border    : 1px solid $ui-05;
+    box-shadow: inset $shadow;
   }
 
   &::-webkit-color-swatch-wrapper {
@@ -145,47 +145,20 @@ input[type="file"] {
 --------------------------------------------------------------*/
 select {
   display           : inline-block;
-  padding           : em(6) em(16) em(6) em(8);
-  border            : 1px solid $c__berlin;
+  padding           : em(4) em(24) em(4) em(8);
+  border            : $border;
   background        : url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+") no-repeat 95% 50%;
-  background-color  : $c__madrid;
-  box-shadow        : 0 1px 1px $c__warsaw;
+  background-color  : $ui-01;
+  box-shadow        : $shadow;
   font-size         : rem(14);
   /* remove default glow effect & add arrows again */
 
   -webkit-appearance: none;
 
   &:hover {
-    border          : 1px solid $c__prague;
-    background-color: $c__sofia;
-    box-shadow      : 0 1px 2px $c__warsaw;
+    border          : 1px solid $ui-05;
+    background-color: $ui-02;
+    box-shadow      : $shadow2;
     cursor          : pointer;
-  }
-}
-
-/*--------------------------------------------------------------
-## Search form
---------------------------------------------------------------*/
-.searchform {
-  display        : flex;
-  align-items    : center;
-  flex-direction : row;
-  justify-content: center;
-  padding        : em(12) em(48);
-
-  input[type=text] {
-    flex         : 1;
-    margin-right : 0;
-    height       : em(36);
-    padding      : em(16);
-    border-radius: $radius 0 0 $radius;
-    font-size    : $font-size;
-  }
-
-  input[type=submit], button[type=submit] {
-    height       : em(36);
-    border-left : 0;
-    border-radius: 0 $radius $radius 0;
-    min-width: em(72);
   }
 }

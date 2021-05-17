@@ -26,7 +26,7 @@
   <div class="site">
     <header class="site-header">
       <div class="site-branding">
-        <a href="#" rel="home">candor</a>
+        <a href="#" rel="home"></a>
       </div> <!-- header__branding -->
     </header> <!-- .header -->
 
@@ -397,6 +397,59 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
 &lt;p&gt;&lt;samp&gt;Keyboard not found &lt;br&gt;Press F1 to continue&lt;/samp&gt;&lt;/p&gt;
 </pre>
 
+          <!-- ============================================================
+                Data
+                ============================================================= -->
+          <h3>Data</h3>
+          <span class="tag">assets/scss/03_elements/data.css</span>
+          <span class="tag">since v.1.0</span>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data">
+            The HTML &lt;data&gt; element links a given piece of content with a machine-readable translation. If the content is time- or date-related, the &lt;time&gt; element must be used.
+          </blockquote>
+
+          <p>New Products:</p>
+          <ul>
+              <li><data value="398">Mini Ketchup</data></li>
+              <li><data value="399">Jumbo Ketchup</data></li>
+              <li><data value="400">Mega Jumbo Ketchup</data></li>
+          </ul>
+
+
+          <pre>
+&lt;p&gt;New Products:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;data value=&quot;398&quot;&gt;Mini Ketchup&lt;/data&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;data value=&quot;399&quot;&gt;Jumbo Ketchup&lt;/data&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;data value=&quot;400&quot;&gt;Mega Jumbo Ketchup&lt;/data&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+          <!-- ============================================================
+                Details
+                ============================================================= -->
+          <h3>Details</h3>
+          <span class="tag">assets/scss/03_elements/details.css</span>
+          <span class="tag">since v.1.0</span>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">
+            <p>The HTML Details Element (&lt;details&gt;) creates a disclosure widget in which information is visible only when the widget is toggled into an &quot;open&quot; state. A summary or label can be provided using the &lt;summary&gt; element.
+              </p>
+            <p>A disclosure widget is typically presented onscreen using a small triangle which rotates (or twists) to indicate open/closed status, with a label next to the triangle. If the first child of the &lt;details&gt; element is a &lt;summary&gt;, the contents of the &lt;summary&gt; element are used as the label for the disclosure widget.
+              </p>
+          </blockquote>
+
+          <details>
+              <summary>Details</summary>
+              Something small enough to escape casual notice.
+          </details>
+
+
+          <pre>
+&lt;details&gt;
+    &lt;summary&gt;Details&lt;/summary&gt;
+    Something small enough to escape casual notice.
+&lt;/details&gt;
+</pre>
 
           <!-- ============================================================
               Dividers
@@ -417,6 +470,146 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
 &lt;p&gt;&sect;2: The second rule of Fight Club is: Always bring cupcakes.&lt;/p&gt;
 </pre>
 
+
+          <!-- ============================================================
+              Explanations
+              ============================================================= -->
+          <h3>Explanations</h3>
+          <span class="tag">assets/scss/03_elements/explanations.css</span>
+          <span class="tag">since v.1.0</span>
+          <h4>Abbreviation</h4>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr">
+            The HTML Abbreviation element (&lt;abbr&gt;) represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation. If present, title must contain this full description and nothing else.
+          </blockquote>
+          <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+          <pre>
+&lt;p&gt;You can use &lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt; to style your &lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
+</pre>
+
+          <h4>dfn</h4>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn">
+            The HTML Definition element (&lt;dfn&gt;) is used to indicate the term being defined within the context of a definition phrase or sentence. The &lt;p&gt; element, the &lt;dt&gt;/&lt;dd&gt; pairing, or the &lt;section&gt; element which is the nearest ancestor of the &lt;dfn&gt; is considered to be the definition of the term.
+          </blockquote>
+          <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+          <pre>
+&lt;p&gt;A &lt;dfn id=&quot;def-validator&quot;&gt;validator&lt;/dfn&gt; is a program that checks for syntax errors in code or documents.&lt;/p&gt;
+</pre>
+
+          <!-- ============================================================
+              Forms
+              ============================================================= -->
+          <h3>Forms</h3>
+          <span class="tag">assets/scss/03_elements/form.css</span>
+          <span class="tag">since v.1.0</span>
+          <h4>form</h4>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">
+            <p>The HTML &lt;form&gt; element represents a document section containing interactive controls for submitting information.</p>
+          </blockquote>
+          <form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div class="form-example">
+    <label for="email">Enter your email: </label>
+    <input type="email" name="email" id="email" required>
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Subscribe!">
+  </div>
+</form>
+
+          <pre>
+&lt;form action=&quot;&quot; method=&quot;get&quot; class=&quot;form-example&quot;&gt;
+  &lt;div class=&quot;form-example&quot;&gt;
+    &lt;label for=&quot;name&quot;&gt;Enter your name: &lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; required&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-example&quot;&gt;
+    &lt;label for=&quot;email&quot;&gt;Enter your email: &lt;/label&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; required&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-example&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Subscribe!&quot;&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+<h4>fieldset</h4>
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">
+  The HTML &lt;fieldset&gt; element is used to group several controls as well as labels (&lt;label&gt;) within a web form.
+</blockquote>
+<form>
+  <fieldset>
+    <legend>Choose your favorite monster</legend>
+
+    <input type="radio" id="kraken" name="monster">
+    <label for="kraken">Kraken</label><br/>
+
+    <input type="radio" id="sasquatch" name="monster">
+    <label for="sasquatch">Sasquatch</label><br/>
+
+    <input type="radio" id="mothman" name="monster">
+    <label for="mothman">Mothman</label>
+  </fieldset>
+</form>
+<pre>
+  &lt;form&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;Choose your favorite monster&lt;/legend&gt;
+
+      &lt;input type=&quot;radio&quot; id=&quot;kraken&quot; name=&quot;monster&quot;&gt;
+      &lt;label for=&quot;kraken&quot;&gt;Kraken&lt;/label&gt;&lt;br/&gt;
+
+      &lt;input type=&quot;radio&quot; id=&quot;sasquatch&quot; name=&quot;monster&quot;&gt;
+      &lt;label for=&quot;sasquatch&quot;&gt;Sasquatch&lt;/label&gt;&lt;br/&gt;
+
+      &lt;input type=&quot;radio&quot; id=&quot;mothman&quot; name=&quot;monster&quot;&gt;
+      &lt;label for=&quot;mothman&quot;&gt;Mothman&lt;/label&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+</pre>
+
+<h4>textarea</h4>
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">
+  The HTML &lt;textarea&gt; element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
+</blockquote>
+<label for="story">Tell us your story:</label>
+
+<textarea id="story" name="story"
+          rows="5" cols="33">
+It was a dark and stormy night...
+</textarea>
+
+<pre>
+  &lt;label for=&quot;story&quot;&gt;Tell us your story:&lt;/label&gt;
+
+  &lt;textarea id=&quot;story&quot; name=&quot;story&quot;
+            rows=&quot;5&quot; cols=&quot;33&quot;&gt;
+  It was a dark and stormy night...
+  &lt;/textarea&gt;
+</pre>
+
+<h4>Dropdown</h4>
+<!-- Surround the select box within a "custom-select" DIV element.
+Remember to set the width: -->
+<div class="custom-select" style="width:200px;">
+  <select>
+    <option value="0">Select car:</option>
+    <option value="1">Audi</option>
+    <option value="2">BMW</option>
+    <option value="3">Citroen</option>
+    <option value="4">Ford</option>
+    <option value="5">Honda</option>
+    <option value="6">Jaguar</option>
+    <option value="7">Land Rover</option>
+    <option value="8">Mercedes</option>
+    <option value="9">Mini</option>
+    <option value="10">Nissan</option>
+    <option value="11">Toyota</option>
+    <option value="12">Volvo</option>
+  </select>
+</div>
+
           <!-- ============================================================
               Headlines
               ============================================================= -->
@@ -427,13 +620,13 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
             The HTML &lt;h1&gt;&ndash;&lt;h6&gt; elements represent six levels of section headings. &lt;h1&gt; is the highest section level and &lt;h6&gt; is the lowest.The HTML &lt;h1&gt;&ndash;&lt;h6&gt; elements represent six levels of section
             headings. &lt;h1&gt; is the highest section level and &lt;h6&gt; is the lowest.
           </blockquote>
-          <h1>Beetles</h1>
-          <h2>External morphology</h2>
-          <h3>Head</h3>
-          <h4>Mouthparts</h4>
-          <h3>Thorax</h3>
-          <h4>Prothorax</h4>
-          <h4>Pterothorax</h4>
+          <h1><data value="h1">Beetles</data></h1>
+          <h2><data value="h2">External morphology</data></h2>
+          <h3><data value="h3">Head</data></h3>
+          <h4><data value="h4">Mouthparts</data></h4>
+          <h3><data value="h3">Thorax</data></h3>
+          <h4><data value="h4">Prothorax</data></h4>
+          <h4><data value="h4">Pterothorax</data></h4>
           <pre>
 &lt;h1&gt;Beetles&lt;/h1&gt;
     &lt;h2&gt;External morphology&lt;/h2&gt;
@@ -444,6 +637,24 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
             &lt;h4&gt;Pterothorax&lt;/h4&gt;
 </pre>
 
+        <!-- ============================================================
+              Images
+              ============================================================= -->
+        <h3>Images</h3>
+        <span class="tag">assets/scss/03_elements/images.css</span>
+        <span class="tag">since v.1.0</span>
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">
+            The HTML &lt;img&gt; element embeds an image into the document.
+        </blockquote>
+        <img class="fit-picture"
+             src="https://images.unsplash.com/photo-1541789094913-f3809a8f3ba5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80"
+             alt="Dunes of the Death Valley, United States">
+
+        <pre>
+&lt;img class=&quot;fit-picture&quot;
+  src=&quot;/images/dunes.jpeg&quot;
+  alt=&quot;Dunes of the Death Valley, United States&quot;&gt;
+</pre>
           <!-- ============================================================
                 Links
                 ============================================================= -->
@@ -615,8 +826,6 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
           <pre>
 &lt;p&gt;When Dave asks HAL to open the pod bay door, HAL answers: &lt;q cite=&quot;https://www.imdb.com/title/tt0062622/quotes/qt0396921&quot;&gt;I&apos;m sorry, Dave. I&apos;m afraid I can&apos;t do that.&lt;/q&gt;&lt;/p&gt;
 </pre>
-
-
 
 
         </section>

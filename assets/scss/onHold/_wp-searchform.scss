@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+## Search form
+--------------------------------------------------------------*/
+.searchform {
+  display        : flex;
+  align-items    : center;
+  flex-direction : row;
+  justify-content: center;
+  padding        : em(12) em(48);
+
+  input[type=text] {
+    flex         : 1;
+    margin-right : 0;
+    height       : em(36);
+    padding      : em(16);
+    border-radius: $radius 0 0 $radius;
+    font-size    : $font-size;
+  }
+
+  input[type=submit], button[type=submit] {
+    height       : em(36);
+    border-left : 0;
+    border-radius: 0 $radius $radius 0;
+    min-width: em(72);
+  }
+}

@@ -44,13 +44,14 @@ $c__stockholm: rgb(60, 225, 175); // tertiary
 $c__barcelona: rgb(48, 186, 140); //a:visted
 
 
-$ui-01   : rgb(255, 255, 255); // bg site / bg button
-$ui-02   : rgb(247, 249, 249); //#fcfbf7; // button hover / footer bg
+$ui-01   : rgb(255, 255, 255); // bg button
+$ui-02   : rgb(247, 249, 249); // button hover
 $ui-03   : rgb(245, 245, 245); // bg progress / bg badge
-$ui-04   : rgb(210, 210, 210); // border / secondary text color
+$ui-04   : rgb(210, 210, 210); // border
 $ui-05   : rgb(195, 195, 195); // button border hover
+$ui-06   :r gba(0,0,0,.06);
 $ui-07   : rgba(0,0,0,.1);
-$ui-08   : #223544;
+$ui-08   : rgb(34, 53, 68);
 
 $body-background: #FDFCF8;
 $site-background: white;

@@ -5,10 +5,12 @@
 ## Abbreviation
 Note: acronym is deprecated and should not be used
 --------------------------------------------------------------*/
-abbr[title],
-acronym {
-  border-bottom  : 1px dotted $c__prague;
+abbr[title] {
+  border-bottom  : 1px dotted $ui-05;
+  // border-bottom  : none; /* normalize */
   text-decoration: none;
+  // text-decoration: underline; /* normalize */
+  // text-decoration: underline dotted; /* normalize */
   cursor         : help;
 }
 
@@ -16,6 +18,6 @@ acronym {
 ##  Defining instance
 --------------------------------------------------------------*/
 dfn {
-  border-bottom  : 1px dotted $c__prague;
+  border-bottom  : 1px dotted $ui-05;
   text-decoration: none;
 }
