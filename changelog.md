@@ -3,6 +3,13 @@
 # The perfect start for your new project.
 ### A simple CSS framework with gulp automation
 
+
+### 0.5.4 – May 24, 2021
+- Security update. Removing postcss package.json dependencies
+
+### 0.5.3 – May 24, 2021
+- Security update. Adding postcss package.json dependencies
+
 ### 0.5.2 – May 24, 2021
 - update package.json
 
