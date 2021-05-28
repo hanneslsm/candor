@@ -409,9 +409,9 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
 
           <p>New Products:</p>
           <ul>
-              <li><data value="398">Mini Ketchup</data></li>
-              <li><data value="399">Jumbo Ketchup</data></li>
-              <li><data value="400">Mega Jumbo Ketchup</data></li>
+            <li><data value="398">Mini Ketchup</data></li>
+            <li><data value="399">Jumbo Ketchup</data></li>
+            <li><data value="400">Mega Jumbo Ketchup</data></li>
           </ul>
 
 
@@ -432,15 +432,17 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
           <span class="tag">assets/scss/03_elements/details.css</span>
           <span class="tag">since v.1.0</span>
           <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">
-            <p>The HTML Details Element (&lt;details&gt;) creates a disclosure widget in which information is visible only when the widget is toggled into an &quot;open&quot; state. A summary or label can be provided using the &lt;summary&gt; element.
-              </p>
-            <p>A disclosure widget is typically presented onscreen using a small triangle which rotates (or twists) to indicate open/closed status, with a label next to the triangle. If the first child of the &lt;details&gt; element is a &lt;summary&gt;, the contents of the &lt;summary&gt; element are used as the label for the disclosure widget.
-              </p>
+            <p>The HTML Details Element (&lt;details&gt;) creates a disclosure widget in which information is visible only when the widget is toggled into an &quot;open&quot; state. A summary or label can be provided using the &lt;summary&gt;
+              element.
+            </p>
+            <p>A disclosure widget is typically presented onscreen using a small triangle which rotates (or twists) to indicate open/closed status, with a label next to the triangle. If the first child of the &lt;details&gt; element is a
+              &lt;summary&gt;, the contents of the &lt;summary&gt; element are used as the label for the disclosure widget.
+            </p>
           </blockquote>
 
           <details>
-              <summary>Details</summary>
-              Something small enough to escape casual notice.
+            <summary>Details</summary>
+            Something small enough to escape casual notice.
           </details>
 
 
@@ -479,7 +481,8 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
           <span class="tag">since v.1.0</span>
           <h4>Abbreviation</h4>
           <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr">
-            The HTML Abbreviation element (&lt;abbr&gt;) represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation. If present, title must contain this full description and nothing else.
+            The HTML Abbreviation element (&lt;abbr&gt;) represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation. If present, title must contain this full description and
+            nothing else.
           </blockquote>
           <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr title="HyperText Markup Language">HTML</abbr>.</p>
           <pre>
@@ -488,12 +491,37 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
 
           <h4>dfn</h4>
           <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn">
-            The HTML Definition element (&lt;dfn&gt;) is used to indicate the term being defined within the context of a definition phrase or sentence. The &lt;p&gt; element, the &lt;dt&gt;/&lt;dd&gt; pairing, or the &lt;section&gt; element which is the nearest ancestor of the &lt;dfn&gt; is considered to be the definition of the term.
+            The HTML Definition element (&lt;dfn&gt;) is used to indicate the term being defined within the context of a definition phrase or sentence. The &lt;p&gt; element, the &lt;dt&gt;/&lt;dd&gt; pairing, or the &lt;section&gt; element which is
+            the nearest ancestor of the &lt;dfn&gt; is considered to be the definition of the term.
           </blockquote>
           <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
           <pre>
 &lt;p&gt;A &lt;dfn id=&quot;def-validator&quot;&gt;validator&lt;/dfn&gt; is a program that checks for syntax errors in code or documents.&lt;/p&gt;
 </pre>
+
+          <!-- ============================================================
+              Figures
+              ============================================================= -->
+          <h3>Figures</h3>
+          <span class="tag">assets/scss/03_elements/figures.css</span>
+          <span class="tag">since v.1.0</span>
+          <h4>figures & figcaption</h4>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">
+            The HTML &lt;figure&gt; (Figure With Optional Caption) element represents self-contained content, potentially with an optional caption, which is specified using the &lt;figcaption&gt; element. The figure, its caption, and its contents are
+            referenced as a single unit.
+          </blockquote>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1534759846116-5799c33ce22a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFuaW1hbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Elephant at sunset">
+            <figcaption>A leopard posing in the Kruger National Park, South Africa. By Geran de Klerk via unsplash.com</figcaption>
+          </figure>
+          <pre>
+  &lt;figure&gt;
+      &lt;img src=&quot;https://images.unsplash.com&quot;
+           alt=&quot;Leopard posing on a stone&quot;&gt;
+      &lt;figcaption&gt;A leopard posing in the Kruger National Park, South Africa. By Geran de Klerk via unsplash.com&lt;/figcaption&gt;
+  &lt;/figure&gt;
+</pre>
+
 
           <!-- ============================================================
               Forms
@@ -506,18 +534,18 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
             <p>The HTML &lt;form&gt; element represents a document section containing interactive controls for submitting information.</p>
           </blockquote>
           <form action="" method="get" class="form-example">
-  <div class="form-example">
-    <label for="name">Enter your name: </label>
-    <input type="text" name="name" id="name" required>
-  </div>
-  <div class="form-example">
-    <label for="email">Enter your email: </label>
-    <input type="email" name="email" id="email" required>
-  </div>
-  <div class="form-example">
-    <input type="submit" value="Subscribe!">
-  </div>
-</form>
+            <div class="form-example">
+              <label for="name">Enter your name: </label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-example">
+              <label for="email">Enter your email: </label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-example">
+              <input type="submit" value="Subscribe!">
+            </div>
+          </form>
 
           <pre>
 &lt;form action=&quot;&quot; method=&quot;get&quot; class=&quot;form-example&quot;&gt;
@@ -534,25 +562,25 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
   &lt;/div&gt;
 &lt;/form&gt;
 </pre>
-<h4>fieldset</h4>
-<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">
-  The HTML &lt;fieldset&gt; element is used to group several controls as well as labels (&lt;label&gt;) within a web form.
-</blockquote>
-<form>
-  <fieldset>
-    <legend>Choose your favorite monster</legend>
+          <h4>fieldset</h4>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">
+            The HTML &lt;fieldset&gt; element is used to group several controls as well as labels (&lt;label&gt;) within a web form.
+          </blockquote>
+          <form>
+            <fieldset>
+              <legend>Choose your favorite monster</legend>
 
-    <input type="radio" id="kraken" name="monster">
-    <label for="kraken">Kraken</label><br/>
+              <input type="radio" id="kraken" name="monster">
+              <label for="kraken">Kraken</label><br />
 
-    <input type="radio" id="sasquatch" name="monster">
-    <label for="sasquatch">Sasquatch</label><br/>
+              <input type="radio" id="sasquatch" name="monster">
+              <label for="sasquatch">Sasquatch</label><br />
 
-    <input type="radio" id="mothman" name="monster">
-    <label for="mothman">Mothman</label>
-  </fieldset>
-</form>
-<pre>
+              <input type="radio" id="mothman" name="monster">
+              <label for="mothman">Mothman</label>
+            </fieldset>
+          </form>
+          <pre>
   &lt;form&gt;
     &lt;fieldset&gt;
       &lt;legend&gt;Choose your favorite monster&lt;/legend&gt;
@@ -569,18 +597,17 @@ The &lt;code&gt;push()&lt;/code&gt; method adds one or more elements to the end 
   &lt;/form&gt;
 </pre>
 
-<h4>textarea</h4>
-<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">
-  The HTML &lt;textarea&gt; element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
-</blockquote>
-<label for="story">Tell us your story:</label>
+          <h4>textarea</h4>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">
+            The HTML &lt;textarea&gt; element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
+          </blockquote>
+          <label for="story">Tell us your story:</label>
 
-<textarea id="story" name="story"
-          rows="5" cols="33">
+          <textarea id="story" name="story" rows="5" cols="33">
 It was a dark and stormy night...
 </textarea>
 
-<pre>
+          <pre>
   &lt;label for=&quot;story&quot;&gt;Tell us your story:&lt;/label&gt;
 
   &lt;textarea id=&quot;story&quot; name=&quot;story&quot;
@@ -589,26 +616,26 @@ It was a dark and stormy night...
   &lt;/textarea&gt;
 </pre>
 
-<h4>Dropdown</h4>
-<!-- Surround the select box within a "custom-select" DIV element.
+          <h4>Dropdown</h4>
+          <!-- Surround the select box within a "custom-select" DIV element.
 Remember to set the width: -->
-<div class="custom-select" style="width:200px;">
-  <select>
-    <option value="0">Select car:</option>
-    <option value="1">Audi</option>
-    <option value="2">BMW</option>
-    <option value="3">Citroen</option>
-    <option value="4">Ford</option>
-    <option value="5">Honda</option>
-    <option value="6">Jaguar</option>
-    <option value="7">Land Rover</option>
-    <option value="8">Mercedes</option>
-    <option value="9">Mini</option>
-    <option value="10">Nissan</option>
-    <option value="11">Toyota</option>
-    <option value="12">Volvo</option>
-  </select>
-</div>
+          <div class="custom-select" style="width:200px;">
+            <select>
+              <option value="0">Select car:</option>
+              <option value="1">Audi</option>
+              <option value="2">BMW</option>
+              <option value="3">Citroen</option>
+              <option value="4">Ford</option>
+              <option value="5">Honda</option>
+              <option value="6">Jaguar</option>
+              <option value="7">Land Rover</option>
+              <option value="8">Mercedes</option>
+              <option value="9">Mini</option>
+              <option value="10">Nissan</option>
+              <option value="11">Toyota</option>
+              <option value="12">Volvo</option>
+            </select>
+          </div>
 
           <!-- ============================================================
               Headlines
@@ -637,20 +664,18 @@ Remember to set the width: -->
             &lt;h4&gt;Pterothorax&lt;/h4&gt;
 </pre>
 
-        <!-- ============================================================
+          <!-- ============================================================
               Images
               ============================================================= -->
-        <h3>Images</h3>
-        <span class="tag">assets/scss/03_elements/images.css</span>
-        <span class="tag">since v.1.0</span>
-        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">
+          <h3>Images</h3>
+          <span class="tag">assets/scss/03_elements/images.css</span>
+          <span class="tag">since v.1.0</span>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">
             The HTML &lt;img&gt; element embeds an image into the document.
-        </blockquote>
-        <img class="fit-picture"
-             src="https://images.unsplash.com/photo-1541789094913-f3809a8f3ba5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80"
-             alt="Dunes of the Death Valley, United States">
+          </blockquote>
+          <img class="fit-picture" src="https://images.unsplash.com/photo-1541789094913-f3809a8f3ba5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80" alt="Dunes of the Death Valley, United States">
 
-        <pre>
+          <pre>
 &lt;img class=&quot;fit-picture&quot;
   src=&quot;/images/dunes.jpeg&quot;
   alt=&quot;Dunes of the Death Valley, United States&quot;&gt;
@@ -826,6 +851,175 @@ Remember to set the width: -->
           <pre>
 &lt;p&gt;When Dave asks HAL to open the pod bay door, HAL answers: &lt;q cite=&quot;https://www.imdb.com/title/tt0062622/quotes/qt0396921&quot;&gt;I&apos;m sorry, Dave. I&apos;m afraid I can&apos;t do that.&lt;/q&gt;&lt;/p&gt;
 </pre>
+
+          <!-- ============================================================
+              Right to left
+              ============================================================= -->
+          <h3>Right to left</h3>
+
+          <h4>dir</h4>
+          <span class="tag">assets/scss/03_elements/rtl.css</span>
+          <span class="tag">since v.1.0</span>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dir">
+            The dir global attribute is an enumerated attribute that indicates the directionality of the element's text.
+          </blockquote>
+          <p dir="rtl">This paragraph is in English but incorrectly goes right to left.</p>
+          <p dir="ltr">This paragraph is in English and correctly goes left to right.</p>
+
+          <hr>
+
+          <p>هذه الفقرة باللغة العربية ولكن بشكل خاطئ من اليسار إلى اليمين.</p>
+          <p dir="auto">هذه الفقرة باللغة العربية ، لذا يجب الانتقال من اليمين إلى اليسار.</p>
+
+          <pre>
+  &lt;p dir=&quot;rtl&quot;&gt;This paragraph is in English but incorrectly goes right to left.&lt;/p&gt;
+  &lt;p dir=&quot;ltr&quot;&gt;This paragraph is in English and correctly goes left to right.&lt;/p&gt;
+
+  &lt;hr&gt;
+
+  &lt;p&gt;&#x647;&#x630;&#x647; &#x627;&#x644;&#x641;&#x642;&#x631;&#x629; &#x628;&#x627;&#x644;&#x644;&#x63A;&#x629; &#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629; &#x648;&#x644;&#x643;&#x646; &#x628;&#x634;&#x643;&#x644; &#x62E;&#x627;&#x637;&#x626; &#x645;&#x646; &#x627;&#x644;&#x64A;&#x633;&#x627;&#x631; &#x625;&#x644;&#x649; &#x627;&#x644;&#x64A;&#x645;&#x64A;&#x646;.&lt;/p&gt;
+  &lt;p dir=&quot;auto&quot;&gt;&#x647;&#x630;&#x647; &#x627;&#x644;&#x641;&#x642;&#x631;&#x629; &#x628;&#x627;&#x644;&#x644;&#x63A;&#x629; &#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629; &#x60C; &#x644;&#x630;&#x627; &#x64A;&#x62C;&#x628; &#x627;&#x644;&#x627;&#x646;&#x62A;&#x642;&#x627;&#x644; &#x645;&#x646; &#x627;&#x644;&#x64A;&#x645;&#x64A;&#x646; &#x625;&#x644;&#x649; &#x627;&#x644;&#x64A;&#x633;&#x627;&#x631;.&lt;/p&gt;
+</pre>
+
+
+          <h4>bdo</h4>
+          <span class="tag">assets/scss/03_elements/rtl.css</span>
+          <span class="tag">since v.1.0</span>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo">
+            The HTML Bidirectional Text Override element (&lt;bdo&gt;) overrides the current directionality of text, so that the text within is rendered in a different direction.
+          </blockquote>
+          <p>The English song "Oh I do like to be beside the seaside"</p>
+          <p>Looks like this in Hebrew: <span dir="rtl">אה, אני אוהב להיות ליד חוף הים</span></p>
+          <p>In the computer's memory, this is stored as <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo></p>
+
+          <pre>
+  &lt;p&gt;The English song &quot;Oh I do like to be beside the seaside&quot;&lt;/p&gt;
+  &lt;p&gt;Looks like this in Hebrew: &lt;span dir=&quot;rtl&quot;&gt;&#x5D0;&#x5D4;, &#x5D0;&#x5E0;&#x5D9; &#x5D0;&#x5D5;&#x5D4;&#x5D1; &#x5DC;&#x5D4;&#x5D9;&#x5D5;&#x5EA; &#x5DC;&#x5D9;&#x5D3; &#x5D7;&#x5D5;&#x5E3; &#x5D4;&#x5D9;&#x5DD;&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;In the computer&apos;s memory, this is stored as &lt;bdo dir=&quot;ltr&quot;&gt;&#x5D0;&#x5D4;, &#x5D0;&#x5E0;&#x5D9; &#x5D0;&#x5D5;&#x5D4;&#x5D1; &#x5DC;&#x5D4;&#x5D9;&#x5D5;&#x5EA; &#x5DC;&#x5D9;&#x5D3; &#x5D7;&#x5D5;&#x5E3; &#x5D4;&#x5D9;&#x5DD;&lt;/bdo&gt;&lt;/p&gt;
+</pre>
+
+          <!-- ============================================================
+              Ruby
+              ============================================================= -->
+          <h3>Ruby</h3>
+          <span class="tag">assets/scss/03_elements/ruby.css</span>
+          <span class="tag">since v.1.0</span>
+          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby">
+            The HTML &lt;ruby&gt; element represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters. It can also be used for annotating other kinds of text,
+            but this usage is less common.
+          </blockquote>
+          <ruby>
+            明日 <rp>(</rp>
+            <rt>Ashita</rt>
+            <rp>)</rp>
+          </ruby>
+          <pre>
+  &lt;ruby&gt;
+  &#x660E;&#x65E5; &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;Ashita&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+  &lt;/ruby&gt;
+</pre>
+
+
+<!-- ============================================================
+    Tables
+    ============================================================= -->
+<h3>Tables</h3>
+<span class="tag">assets/scss/03_elements/tables.css</span>
+<span class="tag">since v.1.0</span>
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">
+The HTML &lt;table&gt; element represents tabular data &mdash; that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.
+</blockquote>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">The table header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The table body</td>
+            <td>with two columns</td>
+        </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="2">The table footer</th>
+      </tr>
+    </tfoot>
+</table>
+
+<pre>
+  &lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th colspan=&quot;2&quot;&gt;The table header&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;The table body&lt;/td&gt;
+            &lt;td&gt;with two columns&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+
+<h4>Table helpers</h4>
+<span class="tag">assets/scss/03_elements/tables.css</span>
+<span class="tag">since v.1.0</span>
+<span class="tag">candor custom</span>
+<p>The <code>.table-container</code> container makes the table responsive.</p>
+<p>The <code>.table-striped</code> class can be used to add zebra-stripes to the table.</p>
+<p>The <code>.table-narrow</code> class is for tables with smaller font size and line height.</p>
+<div class="table-container">
+<table class="table-striped table-narrow">
+  <thead>
+    <tr>
+      <td>Country/Territory</td>	<td>City Name/s</td>	<td>Continental Region</td>	<td>Latitude</td>	<td>Longitude</td>	<td>Population</td>	<td>Elevation (m)</td>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td>Peru</td>	<td>La Rinconada</td>	<td>Americas</td>	<td>S14.6312</td>	<td>W69.4464</td>	<td>16,907</td>	<td>5,100</td>
+      </tr>
+      <tr>
+        <td>Bolivia</td>	<td>El Alto</td>	<td>Americas</td>	<td>-16.517</td> <td>-68.167</td>	<td>1,185,000</td>	<td>4,100</td>
+      </tr>
+      <tr>
+        <td>Bolivia</td>	<td>La Paz</td>	<td>Americas</td>	<td>-16.500	</td><td>-68.150</td>	<td>877,363</td>	<td>3,812</td>
+      </tr>
+      <tr>
+        <td>Peru</td>	<td>Puno	<td>Americas</td>	<td>S13.5036</td>	<td>W070.0126</td>	<td>149,042</td>	<td>3,810</td>
+      </tr>
+      <tr>
+        <td>China</td>	<td>Lhasa</td>	<td>Asia</td>	<td>N29.3900</td>	<td>E091.0700</td>	<td>223,001</td>	<td>3,490</td>
+      </tr>
+      <tr>
+        <td>Peru</td>	<td>Cusco	<td>Americas</td>	<td>S13.5250</td>	<td>W071.9722</td>	<td>435,114</td>	<td>3,399</td>
+      </tr>
+      <tr>
+        <td>Ecuador</td>	<td>Quito	<td>Americas</td>	<td>S00.2295</td>	<td>W078.5243</td>	<td>2,671,191</td>	<td>2,850</td>
+      </tr>
+      <tr>
+        <td>Mexico</td>	<td>Toluca	<td>Americas</td>	<td>N19.2925</td>	<td>W099.6569</td>	<td>2,202,886</td>	<td>2,660</td>
+      </tr>
+      <tr>
+        <td>Colombia</td>	<td>Bogota	<td>Americas</td>	<td>N04.6473</td>	<td>W074.0962</td>	<td>7,878,783</td>	<td>2,619</td>
+      </tr>
+      <tr>
+        <td>Afghanistan</td>	<td>Bamyan</td>	<td>Asia</td>	<td>N34.8215</td>	<td>E067.8273</td>	<td>100,000</td>	<td>2,550</td>
+      </tr>
+    </tbody>
+</table>
+</div>
+<pre>
+  &lt;div class=&quot;table-container&quot;&gt;
+  &lt;table class=&quot;table-striped table-narrow&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        …
+</pre>
+
 
 
         </section>

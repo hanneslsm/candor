@@ -3,6 +3,11 @@
 # The perfect start for your new project.
 ### A simple CSS framework with gulp automation
 
+### 0.6 – May 28, 2021
+- add figures
+- add rtl
+- add ruby
+- add tables
 
 ### 0.5.4 – May 24, 2021
 - Security update. Removing postcss package.json dependencies
@@ -20,7 +25,7 @@
 - add buttons
 - add code
 - add details
-- add Explanations
+- add explanations
 - add forms
 - add images
 - change readme.me

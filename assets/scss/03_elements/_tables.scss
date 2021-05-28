@@ -20,11 +20,11 @@ table {
   margin         : em(12) 0;
   border-collapse: collapse;
   border-style   : hidden;
-  box-shadow     : 0 1px 1px $c__warsaw;
+  box-shadow     : 0 1px 1px $ui-07;
   table-layout   : fixed;
 }
 table, th, td {
-  border: 1px solid $c__berlin;
+  border: 1px solid $ui-border;
 }
 
 td,
@@ -32,19 +32,17 @@ th,
 tr {
   margin : 0;
   padding: em(6) em(12);
-  border: 1px dotted $c__berlin;
+  border: 1px dotted $ui-border;
 }
 
 /*--------------------------------------------------------------
 ## Table header
 --------------------------------------------------------------*/
-th {
-  background   : $c__vienna;
+th, thead {
+  background   : $ui-03;
   text-align   : left;
   font-weight  : bold;
 }
-
-thead {}
 
 /*--------------------------------------------------------------
 ## Table body
@@ -54,17 +52,14 @@ tbody {}
 /*--------------------------------------------------------------
 ## Table footer
 --------------------------------------------------------------*/
-tfoot {
-  background-color: $c__sofia;
-  color           : $c__budapest;
-}
+tfoot {}
 
 /*--------------------------------------------------------------
 ## Table striped
 --------------------------------------------------------------*/
 .table-striped {
   tr:nth-child(odd) {
-    background-color: $c__sofia;
+    background-color: $ui-02;
   }
 }
 
@@ -79,26 +74,4 @@ tfoot {
     font-size  : em(14);
     line-height: em(16);
   }
-}
-
-
-/*--------------------------------------------------------------
-## Table primary
---------------------------------------------------------------*/
-.table-primary{
-  table, th, td {
-    border: none;
-  }
-
-  td,
-  th,
-  tr {
-    margin : 0;
-    padding: em(6) em(12);
-    border: none;
-    border-bottom: 1px solid $c__vienna;
-  }
-
-  tr:hover td {
-    border-bottom: 1px solid $c__amsterdam; }
 }
