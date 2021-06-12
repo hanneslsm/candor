@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 a {
   color          : $link;
-  text-decoration: none;
+  text-decoration-color: $ui-border;
 
   &:visited {
     color: $link-visted;
@@ -13,7 +13,6 @@ a {
   &:focus,
   &:hover {
     color                : $link-hover;
-    text-decoration      : underline;
     text-decoration-color: $link-hover;
   }
 }

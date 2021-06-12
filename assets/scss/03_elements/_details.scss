@@ -16,6 +16,7 @@ details {
 }
 
 summary {
+  display: list-item; /* normalize */
   &:hover {
     cursor: pointer;
   }

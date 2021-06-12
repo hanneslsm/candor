@@ -6,6 +6,7 @@ figure {
 //  width     : auto;
 //  height    : 100%;
 //  text-align: center;
+margin-block-end: $spacing-02;
 
   img {
     //margin       : 0;
@@ -14,5 +15,5 @@ figure {
 
 figcaption {
   text-align: center;
-  font-size : em(12);
+  font-size : $font-size-small;
 }

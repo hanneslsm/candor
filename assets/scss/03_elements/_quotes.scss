@@ -6,15 +6,22 @@
 ## blockquote
 --------------------------------------------------------------*/
 blockquote {
-  margin     : em(24) em(12);
-  padding    : em(12) em(24);
-  border-left: 3px double $ui-border;
-  font-style : italic;
-  p:first-of-type{
-    margin-top: 0;
-  }
-  p:last-of-type{
-    margin-bottom: 0;
+  font-weight       : 600;
+
+  margin-block-start: $spacing-02;
+  margin-block-end  : $spacing-02;
+
+  p:first-of-type {}
+
+  p:last-of-type {}
+
+  &::before {
+    display    : inline-block;
+    position: absolute;
+    color      : $ui-07;
+    content    : '\201c';
+    transform: scale(2.5);
+    text-indent: -.5em
   }
 }
 

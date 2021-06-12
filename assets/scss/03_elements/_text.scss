@@ -7,7 +7,7 @@
 --------------------------------------------------------------*/
 b,
 strong {
-  font-weight: bold;
+  font-weight: bolder; /* normalize */
 }
 
 /*--------------------------------------------------------------
@@ -24,28 +24,31 @@ i {
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
+ * normalize
  */
 
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
 
-sub {
-  bottom: -0.25em;
-}
+ sub,
+ sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+ }
 
-sup {
-  top: -0.5em;
-}
+ sub {
+   bottom: -0.25em;
+ }
+
+ sup {
+   top: -0.5em;
+ }
+
 /*--------------------------------------------------------------
 ## Small
 --------------------------------------------------------------*/
 small {
-  font-size: em(12);
+  font-size: $font-size-small;
 }
 
 /*--------------------------------------------------------------
@@ -67,7 +70,7 @@ s {
 ## Mark
 --------------------------------------------------------------*/
 mark {
-  background: #FFEED8;
+  background: yellow;
 }
 /*--------------------------------------------------------------
 ## Demarcating edits

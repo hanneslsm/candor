@@ -13,8 +13,11 @@ h4,
 h5,
 h6,
 hgroup {
-  font-weight: 500;
-  font-family: $serif;
+  margin-block-start: 3rem;
+  margin-block-end: 1.38rem;
+  font-family: $sans;
+  font-weight: 600;
+  line-height: 1.3;
 
   a {
     text-decoration: none;
@@ -29,50 +32,31 @@ hgroup {
 ## Breakpoint Mobile
 --------------------------------------------------------------*/
 h1 {
-  margin     : 0.67em 0;  /* normalize */
-  color      : $text-02;
-  font-size  : em(32);
-  line-height: em(24);
+  margin-block-start: 0;
+  font-size: 1.802rem;
 }
 
-h2 {
-  color      : $text-03;
-  font-style : italic;
-  font-size  : em(24);
-  line-height: em(22);
-}
+h2 {font-size: 1.602rem;}
 
-h3 {
-  font-size  : em(22);
-  line-height: em(22);
-}
+h3 {font-size: 1.424rem;}
 
-h4 {
-  font-size  : em(20);
-  line-height: em(24);
-}
+h4 {font-size: 1.266rem;}
 
-h5 {
-  font-size: em(18);
-}
-
-h5 {
-  font-size: em(16);
-}
+h5 {font-size: 1.125rem;}
 /*--------------------------------------------------------------
 ## Breakpoint Medium + Large
 --------------------------------------------------------------*/
 @include bp(medium) {
   h1 {
-    font-size  : em(48);
-    line-height: em(22);
-  }
+  margin-block-start: 0;
+  font-size: 2.488rem;
+}
 
-  h2 {
-    font-size: em(28);
-  }
+h2 {font-size: 2.074rem;}
 
-  h3 {
-    font-size: em(24);
-  }
+h3 {font-size: 1.728rem;}
+
+h4 {font-size: 1.44rem;}
+
+h5 {font-size: 1.2rem;}
 }

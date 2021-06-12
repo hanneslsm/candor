@@ -326,7 +326,25 @@ margin: 2em;</pre>
 
         <section>
           <h1>Elements</h1>
-          <p><i>In alphabetic order. Examples quoted from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN Web Docs</a> </i></p>
+          <p><i>Examples quoted from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN Web Docs</a> </i></p>
+
+
+                    <h3>Text-level semantics</h3>
+                    <span class="tag">assets/scss/03_elements/code.css</span>
+                    <span class="tag">since v.1.0</span>
+                    <p cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">The <code>strong</code> <strong>HTML element</strong> indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type.</p>
+                    <p cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">The <code>em</code> <em>HTML element</em> marks text that has stress emphasis. The element can be nested, with each level of nesting indicating a greater degree of emphasis.</p>
+                    <p cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub">The <code>sub</code> <sub>HTML element</sub> specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text.</p>
+                    <p cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup">The <code>sup</code> <sup>HTML element</sup> specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text.</p>
+                    <p cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small">The <code>small</code> <small>HTML element</small> represents side-comments and small print, like copyright and legal text, independent of its styled presentation.</p>
+                    <p cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u">The <code>u</code> <u>HTML element</u> represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS.</p>
+                    <p cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s">The <code>s</code> <s>HTML element</s> renders text with a strikethrough, or a line through it. However, &lt;s&gt; is not appropriate when indicating document edits; for that, use the &lt;del&gt; and &lt;ins&gt; elements, as appropriate.</p>
+                    <p cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark">The <code>mark</code> <mark>HTML element</mark> represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context.</p>
+                    <p cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del">The <code>del</code> <del>HTML element</del> represents a range of text that has been deleted from a document. This can be used when rendering "track changes" or source code diff information, for example. </p>
+                    <p cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins">The <code>ins</code> <ins>HTML element</ins> represents a range of text that has been added to a document. </p>
+                    <p cite"https://developer.mozilla.org/en-US/docs/Web/CSS/::selection">The <code>::selection</code> CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text).</p>
+
+
 
 
           <!-- ============================================================
@@ -930,22 +948,43 @@ Remember to set the width: -->
 The HTML &lt;table&gt; element represents tabular data &mdash; that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.
 </blockquote>
 <table>
-    <thead>
-        <tr>
-            <th colspan="2">The table header</th>
-        </tr>
-    </thead>
+  <thead colspan="7">
+    <tr>
+      <td>Country/Territory</td>	<td>City Name/s</td>	<td>Continental Region</td>	<td>Latitude</td>	<td>Longitude</td>	<td>Population</td>	<td>Elevation (m)</td>
+    </tr>
+  </thead>
     <tbody>
-        <tr>
-            <td>The table body</td>
-            <td>with two columns</td>
-        </tr>
-    </tbody>
-    <tfoot>
       <tr>
-        <th colspan="2">The table footer</th>
+        <td>Peru</td>	<td>La Rinconada</td>	<td>Americas</td>	<td>S14.6312</td>	<td>W69.4464</td>	<td>16,907</td>	<td>5,100</td>
       </tr>
-    </tfoot>
+      <tr>
+        <td>Bolivia</td>	<td>El Alto</td>	<td>Americas</td>	<td>-16.517</td> <td>-68.167</td>	<td>1,185,000</td>	<td>4,100</td>
+      </tr>
+      <tr>
+        <td>Bolivia</td>	<td>La Paz</td>	<td>Americas</td>	<td>-16.500	</td><td>-68.150</td>	<td>877,363</td>	<td>3,812</td>
+      </tr>
+      <tr>
+        <td>Peru</td>	<td>Puno	<td>Americas</td>	<td>S13.5036</td>	<td>W070.0126</td>	<td>149,042</td>	<td>3,810</td>
+      </tr>
+      <tr>
+        <td>China</td>	<td>Lhasa</td>	<td>Asia</td>	<td>N29.3900</td>	<td>E091.0700</td>	<td>223,001</td>	<td>3,490</td>
+      </tr>
+      <tr>
+        <td>Peru</td>	<td>Cusco	<td>Americas</td>	<td>S13.5250</td>	<td>W071.9722</td>	<td>435,114</td>	<td>3,399</td>
+      </tr>
+      <tr>
+        <td>Ecuador</td>	<td>Quito	<td>Americas</td>	<td>S00.2295</td>	<td>W078.5243</td>	<td>2,671,191</td>	<td>2,850</td>
+      </tr>
+      <tr>
+        <td>Mexico</td>	<td>Toluca	<td>Americas</td>	<td>N19.2925</td>	<td>W099.6569</td>	<td>2,202,886</td>	<td>2,660</td>
+      </tr>
+      <tr>
+        <td>Colombia</td>	<td>Bogota	<td>Americas</td>	<td>N04.6473</td>	<td>W074.0962</td>	<td>7,878,783</td>	<td>2,619</td>
+      </tr>
+      <tr>
+        <td>Afghanistan</td>	<td>Bamyan</td>	<td>Asia</td>	<td>N34.8215</td>	<td>E067.8273</td>	<td>100,000</td>	<td>2,550</td>
+      </tr>
+    </tbody>
 </table>
 
 <pre>

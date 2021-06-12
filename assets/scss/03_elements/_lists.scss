@@ -10,7 +10,7 @@ ul {
 }
 
 ul {
-  list-style: circle;
+  list-style: disc;
 }
 
 ol {
@@ -20,7 +20,7 @@ ol {
 li > ol,
 li > ul {
   margin      : 0;
-  padding-inline-start: em(12);
+  padding-inline-start: $spacing-01;
 }
 
 /*--------------------------------------------------------------
@@ -33,5 +33,5 @@ dt {
 }
 
 dd {
-  margin: em(0) em(24) em(12);
+  margin-block-end: $spacing-01;
 }

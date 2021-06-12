@@ -2,8 +2,8 @@
 # Address
 --------------------------------------------------------------*/
 address {
-  margin-bottom: em(6);
+  margin-block-end: $spacing-01;
   word-wrap    : break-word;
   font-family  : $serif;
-  line-height  : em(20);
+  line-height  : 1.25rem;
 }

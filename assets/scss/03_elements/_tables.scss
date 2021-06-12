@@ -17,22 +17,24 @@ inspired by http://maxdesign.com.au/articles/simple-responsive-table/
 --------------------------------------------------------------*/
 table {
   overflow       : scroll;
-  margin         : em(12) 0;
+  margin-block-end: $spacing-02;
   border-collapse: collapse;
   border-style   : hidden;
-  box-shadow     : 0 1px 1px $ui-07;
+  box-shadow     : $shadow;
   table-layout   : fixed;
 }
 table, th, td {
-  border: 1px solid $ui-border;
+  border-bottom: 1px solid $ui-border;
 }
 
 td,
 th,
 tr {
   margin : 0;
-  padding: em(6) em(12);
-  border: 1px dotted $ui-border;
+  padding: 0.5rem 0.75rem;
+  &:hover{
+    background-color: $ui-03;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -70,8 +72,8 @@ tfoot {}
   td,
   th,
   tr {
-    padding    : em(4) em(8);
-    font-size  : em(14);
-    line-height: em(16);
+    padding    : 0.4rem 0.4rem;
+    font-size  : $font-size-small;
+    line-height: 1;
   }
 }

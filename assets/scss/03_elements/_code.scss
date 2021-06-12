@@ -6,14 +6,17 @@
 ## Preformatted Text
 --------------------------------------------------------------*/
 pre {
-  overflow     : auto;
-  padding      : em(12) em(24);
-  max-height   : 80vh;
-  border-bottom: $border;
-  border-radius: $radius;
-  background   : $ui-02;
-  font-size    : em(14);
-  font-family  : $mono;
+  overflow          : auto;
+  padding           : $spacing-01;
+  max-height        : 80vh;
+  border-radius     : $radius;
+  background        : $ui-02;
+  font-size         : 0.8rem;
+  font-family       : $mono;
+  border       : 1px solid $ui-border;
+
+  margin-block-start: $spacing-02;
+  margin-block-end  : $spacing-02;
 }
 
 /*--------------------------------------------------------------
@@ -24,12 +27,17 @@ code,
 tt,
 var {
   padding      : em(3) em(6);
-  border-bottom: $border;
+  border       : 1px solid $ui-border;
   border-radius: $radius;
   background   : $ui-02;
-  color        : $text-01;
-  font-size    : em(14);
+  color        : $red;
+  font-weight  : bold;
+  font-size    : $font-size-small;
   font-family  : $mono;
+
+  &:hover {
+    box-shadow: $shadow;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -55,6 +63,6 @@ samp {
   border-radius   : $radius;
   background-color: #333;
   color           : #4AF626;
-  font-size       : em(14);
+  font-size       : $font-size-small;
   font-family     : $mono;
 }

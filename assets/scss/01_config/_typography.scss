@@ -6,5 +6,8 @@ $mono: "Andale Mono", Courier, monospace;
 $icon: "Fontawesome", "ZapfDingbats";
 $serif: 'DM Serif Display', "Georgia", "Times", Georgia, Times, serif;
 
-$line-height: em(24);
-$font-size: em(16); // px not accessible in some browsers, use em!
+$line-height: 1.5;
+$font-size: em(15); // px are not accessible in some browsers, use em!
+$font-size-small: 0.75rem;
+$spacing-01: 1.5rem;
+$spacing-02: 2rem;

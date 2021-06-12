@@ -3,6 +3,12 @@
 # The perfect start for your new project.
 ### A simple CSS framework with gulp automation
 
+### 0.7 – June 12, 2021
+- Add inline elemnts
+- switch to consistent em & rem
+- implementing the new visiual style
+
+
 ### 0.6 – May 28, 2021
 - add figures
 - add rtl

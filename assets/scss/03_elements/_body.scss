@@ -9,15 +9,15 @@
 
 html {
   line-height             : 1.15;  /* normalize */
-
   -webkit-text-size-adjust: 100%;  /* normalize */
+  font-size: 100%; /*16px*/
 }
 
 body {
   margin                : 0;
-  background-color      : $c__madrid;
+  background-color      : $ui-01;
   background-color      : $body-background;
-  color                 : $c__rome;
+  color                 : $text-01;
   font-size             : $font-size;
   font-family           : $sans;
   line-height           : $line-height;
@@ -26,7 +26,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-p {}
+p {
+  margin-block-end: $spacing-01;
+}
 
 main {
   display: block; /* normalize */
